@@ -6,32 +6,32 @@
         "id": 1
       }
     ],
-    "colMovies": [
+    "movies": [
         {
             "title": "title",
             "image": "imageURL",
             "type": "DVD",
-            "genre": "Horror",
+            "genreId": 1,
             "id": 1,
-            "userId": "userId"
+            "userId": "userId",
+            "owned": "true",
+            "liked": "false",
+            "review": "review"
         }
     ],
-    "needMovies": [
+    "genres": [
         {
-            "title": "title",
-            "image": "imageURL",
-            "genre": "Horror",
             "id": 1,
-            "userId": "userId"
-        }
-    ],
-    "mehMovies": [
+            "name": "Horror"
+        },
         {
-            "title": "title",
-            "image": "imageURL",
-            "genre": "Horror",
-            "id": 1,
-            "userId": "userId"
+            "id": 2,
+            "name": "Drama"
+        },
+        {
+            "id": 3,
+            "name": "Action"
         }
     ]
+   
 }

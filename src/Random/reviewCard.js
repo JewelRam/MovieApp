@@ -1,2 +1,2 @@
-//creates cards for meh.js
+//creates cards for dislike.js
 //needs delete button and move to collection button
