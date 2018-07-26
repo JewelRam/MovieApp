@@ -1,0 +1,37 @@
+{
+    "users": [
+      {
+        "userName": "username",
+        "password": "password",
+        "id": 1
+      }
+    ],
+    "colMovies": [
+        {
+            "title": "title",
+            "image": "imageURL",
+            "type": "DVD",
+            "genre": "Horror",
+            "id": 1,
+            "userId": "userId"
+        }
+    ],
+    "needMovies": [
+        {
+            "title": "title",
+            "image": "imageURL",
+            "genre": "Horror",
+            "id": 1,
+            "userId": "userId"
+        }
+    ],
+    "mehMovies": [
+        {
+            "title": "title",
+            "image": "imageURL",
+            "genre": "Horror",
+            "id": 1,
+            "userId": "userId"
+        }
+    ]
+}

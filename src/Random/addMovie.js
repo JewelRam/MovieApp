@@ -1,0 +1,1 @@
+//function that adds the new movie to the correct database
