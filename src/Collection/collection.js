@@ -3,29 +3,25 @@
 import React, { Component } from "react"
 import TypeNavbar from "./TypeNavbar"
 import { Panel } from "react-bootstrap"
-import {FormControl, FormGroup, Button} from "react-bootstrap"
+import SearchComponent from "../Random/SearchComponent"
 
 
 export default class Collection extends Component {
+
+
   render() {
     return (
-      <React.Fragment>
+      <div id="collection">
        
  <Panel bsStyle="info">
     <Panel.Heading>
       <Panel.Title componentClass="h3">My Collection</Panel.Title>
     </Panel.Heading>
     <Panel.Body><TypeNavbar/>
-  
-        <p>Collection Page</p>
-        <FormGroup>
-    <FormControl type="text" placeholder="Search Movie" />
-    <br></br>
-    <Button type= "submit">Add Movie</Button>
-  </FormGroup>
+  <SearchComponent/>
   </Panel.Body>
   </Panel>
-      </React.Fragment>
+      </div>
     );
   }
 }

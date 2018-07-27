@@ -6,10 +6,11 @@ import React, { Component } from "react"
 export default class Home extends Component {
     render() {
         return (
-            <React.Fragment>
+            
+                <div id="home">
                 <NavigationBar />
-                <p>HomePage</p>
-            </React.Fragment>
+                </div>
+            
         )
     }
 }

@@ -7,11 +7,11 @@ export default props => {
   return (
    
 
-<Navbar>
+<Navbar id="colNav">
   
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="Home">Movie App</a>
+      <a href="Home">Home</a>
     </Navbar.Brand>
   </Navbar.Header>
   

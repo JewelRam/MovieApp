@@ -47,6 +47,7 @@ export default class Login extends Component {
                     placeholder="User Name"
                     required="" />
                 <label htmlFor="inputUserName">
+            
                     Password:
                 </label>
                 <input onChange={this.handleFieldChange} type="password"

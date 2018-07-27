@@ -11,29 +11,83 @@ body {
     grid-gap: 0px;
     
   /* Determines the number of columns and how wide each column is relative to the others */
-    grid-template-columns: 40fr;
+    grid-template-columns: 5fr 5fr;
     
   /* Determines the number of rows and how tall each row is relative to the others */
-    grid-template-rows: 40fr;
+    
     max-height: 100vh;
 min-height: 100vh;
   }
 #login {
-  background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/blood-splatter-black-background-7.jpg");
+  background-image: url("https://media.giphy.com/media/G12DX1KaAcRva/giphy.gif");
   color: red;
+  background-size: cover;
+  background-position: center;
   grid-column-start: 1;
                 
   /* The chat div ends at the beginning of column 2 */
-    grid-column-end: 2;
-    
-  /* The chat div starts at the beginning of row 4 */
-    grid-row-start: 1;
-   
-    
-  /* The chat div ends at the beginning of row 7 (row 7 doesn't actually exist, so it just ends at the bottom of the page) */
-    grid-row-end: 2;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  
+    grid-column-end: 3;
+ 
     text-align: left;
+}
+
+#home {
+  background-image: url("https://www.overthinkingit.com/wp-content/uploads/2009/09/aaaaaaa.jpg");
+  color: red;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+                
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#dislike {
+  color: red;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+                
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#collection {
+  
+  color: red;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+                
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#need {
+  
+  color: red;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+                
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#navbar {
+  font-size: 50px;
+  background-color: rgb(15, 15, 20);
+  
+}
+#searchBar {
+  max-width: 500px;
+}
+#colNav {
+  font-size: 50px;
+  background-color: rgb(15, 15, 20);
+  max-width: 85px;
 }

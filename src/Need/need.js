@@ -4,30 +4,26 @@
 //needs search bar
 import ColNavbar from "../Collection/ColNavbar"
 import React, { Component } from "react"
-import {Panel} from "react-bootstrap"
-import {FormControl, FormGroup, Button} from "react-bootstrap"
+import { Panel } from "react-bootstrap"
+import SearchComponent from "../Random/SearchComponent"
 
 export default class Need extends Component {
     render() {
-      return (
-          <React.Fragment>
-              {/* <PageHeader>
+        return (
+            <div id="need">
+                {/* <PageHeader>
             Movies I Need To Buy <small>Wooo tiny header</small>
               <ColNavbar/>
               </PageHeader> */}
-              <Panel bsStyle="info">
-          <Panel.Heading>
-            <Panel.Title componentClass="h3">Movies I Need To Buy</Panel.Title>
-          </Panel.Heading>
-          <Panel.Body><ColNavbar /></Panel.Body>
-        </Panel>
-        <p>Need</p>
-        <FormGroup>
-    <FormControl type="text" placeholder="Search Movie" />
-    <br></br>
-    <Button type= "submit">Add Movie</Button>
-  </FormGroup>
-        </React.Fragment>
-      );
+                <Panel bsStyle="info">
+                    <Panel.Heading>
+                        <Panel.Title componentClass="h3">Movies I Need To Buy</Panel.Title>
+                    </Panel.Heading>
+                    <Panel.Body><ColNavbar /></Panel.Body>
+
+                    <SearchComponent />
+                </Panel>
+            </div>
+        );
     }
-  }
+}

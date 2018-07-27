@@ -4,19 +4,19 @@ import { Navbar, NavItem,  Nav } from 'react-bootstrap'
 
 export default props => {
   return (
-<Navbar>
+<Navbar id="navbar">
   
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="Home">Movie App</a>
+      {/* <a href="Home">Movie App</a> */}
     </Navbar.Brand>
   </Navbar.Header>
   <Nav>
     <NavItem eventKey={1} href="collection">
-      Collection
+      Collection --
     </NavItem>
     <NavItem eventKey={2} href="need">
-      Need To Buy
+      Need To Buy --
     </NavItem>
     <NavItem eventKey={3} href="dislike">
       Eh, I'm Good

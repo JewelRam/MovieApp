@@ -6,26 +6,22 @@
 import React, { Component } from "react";
 import ColNavbar from "../Collection/ColNavbar"
 import { Panel } from "react-bootstrap"
-import {FormControl, FormGroup, Button} from "react-bootstrap"
+import SearchComponent from "../Random/SearchComponent"
 
 export default class Home extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div id="dislike">
 
         <Panel bsStyle="info">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Movies I Didn't Like</Panel.Title>
           </Panel.Heading>
           <Panel.Body><ColNavbar /></Panel.Body>
-        </Panel>
-        <p>Dislike</p>
-        <FormGroup>
-    <FormControl type="text" placeholder="Search Movie" />
-    <br></br>
-    <Button type= "submit">Add Movie</Button>
-  </FormGroup>
-      </React.Fragment>
+        <SearchComponent/>
+    
+  </Panel>
+      </div>
     );
   }
 }
