@@ -36,8 +36,12 @@ min-height: 100vh;
   
 }
 #movieCard {
-  max-width: 200px;
+  max-width: 400px;
+  max-height: 400px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  grid-gap: 18px;
 }
 #submitBtn {
   background-color: black;

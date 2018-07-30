@@ -1,59 +1,163 @@
 {
-    "users": [
-      {
-        "userName": "username",
-        "password": "password",
-        "id": 1
-      }
-    ],
-    "movies": [
-        {
-            "title": "title",
-            "image": "imageURL",
-            "type": "DVD",
-            "genreId": 1,
-            "id": 1,
-            "userId": "userId",
-            "owned": "true",
-            "liked": "false",
-            "review": "review"
-        },
-        {
-            "title": "Star Wars",
-            "image": "imageURL",
-            "type": "VHS",
-            "genreId": 1,
-            "id": 2,
-            "userId": "userId",
-            "owned": "true",
-            "liked": "false",
-            "review": "review"
-        },
-        {
-            "title": "Pulp Fiction",
-            "image": "imageURL",
-            "type": "DVD",
-            "genreId": 1,
-            "id": 3,
-            "userId": "userId",
-            "owned": "true",
-            "liked": "false",
-            "review": "review"
-        }
-    ],
-    "genres": [
-        {
-            "id": 1,
-            "name": "Horror"
-        },
-        {
-            "id": 2,
-            "name": "Drama"
-        },
-        {
-            "id": 3,
-            "name": "Action"
-        }
-    ]
-   
+  "users": [
+    {
+      "userName": "username",
+      "password": "password",
+      "id": 1
+    }
+  ],
+  "movies": [
+    {
+      "title": "Star Wars",
+      "image": "image",
+      "genre": "genreId",
+      "type": "VHS",
+      "owned": "true",
+      "liked": "false",
+      "id": 1,
+      "review": "true"
+    },
+    {
+      "vote_count": 185,
+      "id": 10288,
+      "video": false,
+      "vote_average": 6.6,
+      "title": "Fido",
+      "popularity": 5.775,
+      "poster_path": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "original_language": "en",
+      "original_title": "Fido",
+      "genre_ids": [
+        10749,
+        35,
+        18,
+        27
+      ],
+      "backdrop_path": "/rtQKPquRwkk2tpc6LuSg0DrfHpW.jpg",
+      "adult": false,
+      "overview": "Timmy Robinson's best friend in the whole wide world is a six-foot tall rotting zombie named Fido. But when Fido eats the next-door neighbor, Mom and Dad hit the roof, and Timmy has to go to the ends of the earth to keep Fido a part of the family. A boy-and-his-dog movie for grown ups, \"Fido\" will rip your heart out.",
+      "release_date": "2006-09-07"
+    },
+    {
+      "vote_count": 3478,
+      "id": 150689,
+      "video": false,
+      "vote_average": 6.7,
+      "title": "Cinderella",
+      "popularity": 22.285,
+      "poster_path": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
+      "original_language": "en",
+      "original_title": "Cinderella",
+      "genre_ids": [
+        10749,
+        14,
+        10751,
+        18
+      ],
+      "backdrop_path": "/gkuyOdCeuKLdOlwQIUF44SHsYCq.jpg",
+      "adult": false,
+      "overview": "When her father unexpectedly passes away, young Ella finds herself at the mercy of her cruel stepmother and her daughters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger in the woods.",
+      "release_date": "2015-03-12"
+    },
+    {
+      "vote_count": 4165,
+      "id": 58595,
+      "video": false,
+      "vote_average": 5.9,
+      "title": "Snow White and the Huntsman",
+      "popularity": 19.781,
+      "poster_path": "/40iabcM7KQLJzmO8yGm8AvUbxZR.jpg",
+      "original_language": "en",
+      "original_title": "Snow White and the Huntsman",
+      "genre_ids": [
+        12,
+        14,
+        18
+      ],
+      "backdrop_path": "/sPnG1FDAMkhzsOYRpT9MEF8ZkUv.jpg",
+      "adult": false,
+      "overview": "After the Evil Queen marries the King, she performs a violent coup in which the King is murdered and his daughter, Snow White, is taken captive. Almost a decade later, a grown Snow White is still in the clutches of the Queen. In order to obtain immortality, The Evil Queen needs the heart of Snow White. After Snow escapes the castle, the Queen sends the Huntsman to find her in the Dark Forest.",
+      "release_date": "2012-05-30"
+    },
+    {
+      "title": "Fido",
+      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "false",
+      "review": "review",
+      "id": 150690
+    },
+    {
+      "title": "Star Wars",
+      "image": "/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150691
+    },
+    {
+      "title": "The Iron Giant",
+      "image": "/rdN6IjV4xlDDhrT8ewkkJfPvp2e.jpg",
+      "type": "option1",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "review": "review",
+      "id": 150692
+    },
+    {
+      "title": "Cinderella",
+      "image": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "review": "review",
+      "id": 150693
+    },
+    {
+      "title": "Starship Troopers",
+      "image": "/zeCD9WkhABFJmPq3SlTozXJGEtr.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150694
+    },
+    {
+      "title": "The Descent",
+      "image": "/ldzNyitGjBLjjOzLTaQyYDMVDF1.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "false",
+      "review": "review",
+      "id": 150695
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Horror"
+    },
+    {
+      "id": 2,
+      "name": "Drama"
+    },
+    {
+      "id": 3,
+      "name": "Action"
+    }
+  ]
 }

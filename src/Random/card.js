@@ -28,11 +28,11 @@ const MovieCard = props => {
 
 console.log(props)
 return(
-    <Thumbnail id="movieCard" src="/thumbnaildiv.png" alt="242x200">
+    <Thumbnail id="movieCard" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
     <h3>{props.movie.title}</h3>
     <p>{props.movie.type}</p>
     <p>
-      <Button bsStyle="danger">Delete</Button>
+      <Button onClick={() => props.deleteMovie(props.movie.id)} bsStyle="danger">Delete</Button>
     
     </p>
   </Thumbnail>

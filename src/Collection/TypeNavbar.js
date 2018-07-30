@@ -12,13 +12,13 @@ export default props => {
     </Navbar.Brand>
   </Navbar.Header>
   <Nav>
-    <NavItem eventKey={1} href="#">
+    <NavItem eventKey={1} href="movies?type=VHS">
       VHS
     </NavItem>
-    <NavItem eventKey={2} href="#">
+    <NavItem eventKey={2} href="movies?type=DVD">
       DVD
     </NavItem>
-    <NavItem eventKey={3} href="#">
+    <NavItem eventKey={3} href="movies?type=BLURAY">
       BluRay
     </NavItem>
   </Nav>
