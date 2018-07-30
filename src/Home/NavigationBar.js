@@ -15,6 +15,7 @@ export default props => {
     <NavItem eventKey={1} href="collection">
       Collection --
     </NavItem>
+    {/* <button type="button" href="collection" class="btn btn-outline-secondary">Collection</button> */}
     <NavItem eventKey={2} href="need">
       Need To Buy --
     </NavItem>

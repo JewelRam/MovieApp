@@ -4,6 +4,7 @@ import React, { Component } from "react"
 import TypeNavbar from "./TypeNavbar"
 import { Panel } from "react-bootstrap"
 import SearchComponent from "../Random/SearchComponent"
+// import MovieCard from "../Random/card"
 
 
 export default class Collection extends Component {
@@ -19,6 +20,7 @@ export default class Collection extends Component {
     </Panel.Heading>
     <Panel.Body><TypeNavbar/>
   <SearchComponent/>
+ 
   </Panel.Body>
   </Panel>
       </div>

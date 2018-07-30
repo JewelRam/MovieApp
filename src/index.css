@@ -20,17 +20,31 @@ min-height: 100vh;
   }
 #login {
   background-image: url("https://media.giphy.com/media/G12DX1KaAcRva/giphy.gif");
-  color: red;
+  color: black;
   background-size: cover;
   background-position: center;
   grid-column-start: 1;
-                
+               
   /* The chat div ends at the beginning of column 2 */
     grid-column-end: 3;
  
-    text-align: left;
+    text-align: center;
 }
-
+#login-form {
+  max-width: 330px;
+  text-align: center;
+  
+}
+#movieCard {
+  max-width: 200px;
+  text-align: center;
+}
+#submitBtn {
+  background-color: black;
+}
+#add-movie-btn {
+  margin: 15px;
+}
 #home {
   background-image: url("https://www.overthinkingit.com/wp-content/uploads/2009/09/aaaaaaa.jpg");
   color: red;
@@ -89,5 +103,6 @@ min-height: 100vh;
 #colNav {
   font-size: 50px;
   background-color: rgb(15, 15, 20);
-  max-width: 85px;
+  max-width: 100px;
+  text-align: center;
 }

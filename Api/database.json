@@ -17,6 +17,28 @@
             "owned": "true",
             "liked": "false",
             "review": "review"
+        },
+        {
+            "title": "Star Wars",
+            "image": "imageURL",
+            "type": "VHS",
+            "genreId": 1,
+            "id": 2,
+            "userId": "userId",
+            "owned": "true",
+            "liked": "false",
+            "review": "review"
+        },
+        {
+            "title": "Pulp Fiction",
+            "image": "imageURL",
+            "type": "DVD",
+            "genreId": 1,
+            "id": 3,
+            "userId": "userId",
+            "owned": "true",
+            "liked": "false",
+            "review": "review"
         }
     ],
     "genres": [

@@ -37,7 +37,8 @@ addMovie: {
             // Once the new array of articles is retrieved, set the state
             .then(a => a.json())
     }
-},
+}
+
 // handleEdit: {
 //     value: (moviesToEdit) => {
 //         return fetch(`http://localhost:5002/tasks/${moviesToEdit.id}`, {

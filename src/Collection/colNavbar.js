@@ -3,6 +3,7 @@ import { Navbar } from 'react-bootstrap'
 import React from "react"
 
 
+
 export default props => {
   return (
    
@@ -12,9 +13,11 @@ export default props => {
   <Navbar.Header>
     <Navbar.Brand>
       <a href="Home">Home</a>
+      
     </Navbar.Brand>
   </Navbar.Header>
   
 </Navbar>
+
   )
 }
