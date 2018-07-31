@@ -7,7 +7,7 @@ import React, { Component } from "react"
 import { Panel } from "react-bootstrap"
 import SearchComponent from "../Random/SearchComponent"
 import Database from "../Random/APIManager"
-import MovieCard from "../Random/card"
+import NeedCard from "../Random/NeedCard"
 
 export default class Need extends Component {
     constructor() {
@@ -17,10 +17,34 @@ export default class Need extends Component {
        
         };
     }
+   
+   
+ addNewMovie = (searchResult) => {
+   
+    let newMovie= {
+   
+     "title": searchResult.title,
+     "image": searchResult.poster_path,
+     "type": this.state.selectedOption,
+     "genreId": 1,
+     "userId": 1,
+     "owned": "false",
+     "liked": "true",
+     "review": "review"
+ 
+   }
+   Database.addMovie(newMovie)
+   .then(response => {
+ return Database.getAllNeededMovies()
+   })
+   .then(responseData => {
+     this.setState({ movies: responseData })
+ })
+  }   
     performSearch = (query) => {
         Database.performSearch(query)
-             .then(allMovies =>
-                 this.setState({ movies: allMovies }) )
+             .then(neededMovie =>
+                this.addNewMovie(neededMovie) )
      }
     
       componentDidMount() {
@@ -32,7 +56,7 @@ export default class Need extends Component {
     
       deleteMovie = movieId => {
         // Delete the specified movie from the API
-        Database.deleteMovie("movies", movieId)
+        Database.deleteMovie(movieId)
           .then(() => {
             return Database.getAllNeededMovies("movies")
           })      
@@ -60,7 +84,7 @@ export default class Need extends Component {
                     <ul>
               {this.state.movies.map(movie => (
 
-                <MovieCard
+                <NeedCard
                   key={movie.id}
                   movie={movie}
 

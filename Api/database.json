@@ -1,22 +1,12 @@
 {
   "users": [
     {
-      "userName": "username",
+      "userName": "userName",
       "password": "password",
       "id": 1
     }
   ],
   "movies": [
-    {
-      "title": "Star Wars",
-      "image": "image",
-      "genre": "genreId",
-      "type": "VHS",
-      "owned": "true",
-      "liked": "false",
-      "id": 1,
-      "review": "true"
-    },
     {
       "vote_count": 185,
       "id": 10288,
@@ -80,15 +70,37 @@
       "release_date": "2012-05-30"
     },
     {
-      "title": "Fido",
-      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "title": "The Descent",
+      "image": "/ldzNyitGjBLjjOzLTaQyYDMVDF1.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150695
+    },
+    {
+      "title": "Advantageous",
+      "image": "/wGD529WiRYTCaXFrX93HESFLzo4.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "review": "review",
+      "id": "5"
+    },
+    {
+      "title": "FernGully: The Last Rainforest",
+      "image": "/gU2TbLTJ2s0aL5OsPuYQgZR8y3A.jpg",
       "type": "VHS",
       "genreId": 1,
       "userId": 1,
       "owned": "true",
-      "liked": "false",
+      "liked": "true",
       "review": "review",
-      "id": 150690
+      "id": 150696
     },
     {
       "title": "Star Wars",
@@ -99,51 +111,27 @@
       "owned": "true",
       "liked": "true",
       "review": "review",
-      "id": 150691
+      "id": 150700
     },
     {
-      "title": "The Iron Giant",
-      "image": "/rdN6IjV4xlDDhrT8ewkkJfPvp2e.jpg",
-      "type": "option1",
+      "title": "White God",
+      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
       "genreId": 1,
       "userId": 1,
       "owned": "false",
-      "liked": "false",
+      "liked": "true",
       "review": "review",
-      "id": 150692
+      "id": 150701
     },
     {
       "title": "Cinderella",
       "image": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
-      "type": "DVD",
       "genreId": 1,
       "userId": 1,
       "owned": "false",
       "liked": "false",
       "review": "review",
-      "id": 150693
-    },
-    {
-      "title": "Starship Troopers",
-      "image": "/zeCD9WkhABFJmPq3SlTozXJGEtr.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "review": "review",
-      "id": 150694
-    },
-    {
-      "title": "The Descent",
-      "image": "/ldzNyitGjBLjjOzLTaQyYDMVDF1.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "true",
-      "liked": "false",
-      "review": "review",
-      "id": 150695
+      "id": 150702
     }
   ],
   "genres": [

@@ -14,35 +14,60 @@ export default class Dislike extends Component {
   constructor() {
     super();
     this.state = {
-        movies: []
-   
+      movies: []
+
     };
-}
-performSearch = (query) => {
-  Database.performSearch(query)
-       .then(allMovies =>
-           this.setState({ movies: allMovies }) )
-}
+  }
+  addNewMovie = (searchResult) => {
 
-componentDidMount() {
-  Database.getAllDislikedMovies()
-      .then(responseData => {
-          this.setState({ movies: responseData })
+    let newMovie = {
+
+      "title": searchResult.title,
+      "image": searchResult.poster_path,
+      "type": this.state.selectedOption,
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "review": "review"
+
+    }
+    Database.addMovie(newMovie)
+      .then(response => {
+        return Database.getAllDislikedMovies()
       })
-}
+      .then(responseData => {
+        this.setState({ movies: responseData })
+      })
+  }
 
-deleteMovie = movieId => {
-  // Delete the specified movie from the API
-  Database.deleteMovie("movies", movieId)
-    .then(() => {
-      return Database.getAllDislikedMovies("movies")
-    })      
-    .then(card => {
-      this.setState({
-        movies: card
+  performSearch = (query) => {
+    Database.performSearch(query)
+      .then(badMovie => {
+        this.addNewMovie(badMovie)
+      }
+      )
+  }
+
+  componentDidMount() {
+    Database.getAllDislikedMovies()
+      .then(responseData => {
+        this.setState({ movies: responseData })
+      })
+  }
+
+  deleteMovie = movieId => {
+    // Delete the specified movie from the API
+    Database.deleteMovie(movieId)
+      .then(() => {
+        return Database.getAllDislikedMovies("movies")
+      })
+      .then(card => {
+        this.setState({
+          movies: card
+        });
       });
-    });
-};
+  };
 
   render() {
     return (
@@ -53,22 +78,23 @@ deleteMovie = movieId => {
             <Panel.Title componentClass="h3">Movies I Didn't Like</Panel.Title>
           </Panel.Heading>
           <Panel.Body><ColNavbar /></Panel.Body>
-        <SearchComponent/>
-        <ul>
-              {this.state.movies.map(movie => (
+          <SearchComponent 
+          performSearch={this.performSearch} />
+          <ul>
+            {this.state.movies.map(movie => (
 
-                <ReviewCard
-                  key={movie.id}
-                  movie={movie}
+              <ReviewCard
+                key={movie.id}
+                movie={movie}
 
-                  deleteMovie={this.deleteMovie}
-                />
+                deleteMovie={this.deleteMovie}
+              />
 
 
-              ))
-              }
-            </ul>
-  </Panel>
+            ))
+            }
+          </ul>
+        </Panel>
       </div>
     );
   }

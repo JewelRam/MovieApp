@@ -9,19 +9,7 @@ const ReviewCard = props => {
 
 
     return(
-//         <div>
-//       <Card inverse>
-//         <CardImg width="30%" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="Card image cap" />
-//         <CardImgOverlay>
-//           <CardTitle>{props.movie.title}</CardTitle>
-//           <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-//           <CardText>
-//             <small className="text-muted">Last updated 3 mins ago</small>
-//           </CardText>
-//           <Button>Edit</Button>
-//         </CardImgOverlay>
-//       </Card>
-// </div>
+
 <div>
       <Card>
         <CardBody>
@@ -31,7 +19,7 @@ const ReviewCard = props => {
         <img width="20%" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="Card image cap" />
         <CardBody>
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button>Edit</Button> <Button>Delete</Button>
+          <Button>Edit</Button> <Button onClick={() => props.deleteMovie(props.movie.id)}>Delete</Button>
           
         </CardBody>
       </Card>

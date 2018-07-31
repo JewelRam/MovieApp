@@ -1,22 +1,30 @@
 //handles API calls
 const Database = Object.create({}, {
 
+// deleteMovie: {
+//     value: (movieId) => {
+//         // Delete the specified article
+//         return fetch(`http://localhost:5002/movies/${movieId}`, {
+//             method: "DELETE"
+//         })
+//             // When DELETE is finished, retrieve the new list of articles
+//             .then((poop) => {
+//                 console.log(poop)
+//                 // Remember you HAVE TO return this fetch to the subsequenet `then()`
+//                 return fetch("http://localhost:5002/movies")
+//             })
+//             // Once the new array of animals is retrieved, set the state
+//             .then(e => e.json())
+//     }
+// },
 deleteMovie: {
     value: (movieId) => {
-        // Delete the specified article
-        return fetch(`http://localhost:5002/movies/${movieId}`, {
-            method: "DELETE"
-        })
-            // When DELETE is finished, retrieve the new list of articles
-            .then((poop) => {
-                console.log(poop)
-                // Remember you HAVE TO return this fetch to the subsequenet `then()`
-                // return fetch("http://localhost:5002/movies")
-            })
-            // Once the new array of animals is retrieved, set the state
-            .then(a => a.json())
+      return fetch(`http://localhost:5002/movies/${movieId}`, {
+          method: "DELETE"
+          
+      })
     }
-},
+  },
 getAllMovies: {
     value: () => {
         return fetch("http://localhost:5002/movies")
@@ -41,6 +49,30 @@ getAllDislikedMovies: {
         .then(e => e.json())
     }
 },
+getMoviesByType: {
+    value: (type) => {
+        return fetch(`http://localhost:5002/movies?type=${type}`)
+        .then(e => e.json())
+    }
+},
+// getAllDVDMovies: {
+//     value: () => {
+//         return fetch("http://localhost:5002/movies?type=DVD")
+//         .then(e => e.json())
+//     }
+// },
+// getAllVHSMovies: {
+//     value: () => {
+//         return fetch("http://localhost:5002/movies?type=VHS")
+//         .then(e => e.json())
+//     }
+// },
+// getAllBLURAYMovies: {
+//     value: () => {
+//         return fetch("http://localhost:5002/movies?type=BLURAY")
+//         .then(e => e.json())
+//     }
+// },
 addMovie: {
     value: (newObject) => {
         return fetch("http://localhost:5002/movies", {

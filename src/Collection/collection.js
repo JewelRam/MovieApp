@@ -29,8 +29,9 @@ export default class Collection extends Component {
     "genreId": 1,
     "userId": 1,
     "owned": "true",
-    "liked": "false",
+    "liked": "true",
     "review": "review"
+
   }
   Database.addMovie(newMovie)
   .then(response => {
@@ -50,6 +51,12 @@ return Database.getAllOwnedMovies()
        )
       
 }
+getMoviesByType = (type) => {
+  Database.getMoviesByType(type)
+  .then(movieType => {
+    this.setState({movies: movieType})
+  } )
+}
 
   componentDidMount() {
     Database.getAllOwnedMovies()
@@ -66,7 +73,8 @@ handleOptionChange = (changeEvent) => {
 }
   deleteMovie = movieId => {
     // Delete the specified movie from the API
-    Database.deleteMovie("movies", movieId)
+    Database.deleteMovie( movieId)
+
       .then(() => {
         return Database.getAllOwnedMovies("movies")
       })      
@@ -85,7 +93,7 @@ handleOptionChange = (changeEvent) => {
           <Panel.Heading>
             <Panel.Title componentClass="h3">My Collection</Panel.Title>
           </Panel.Heading>
-          <Panel.Body><TypeNavbar />
+          <Panel.Body><TypeNavbar getMoviesByType={this.getMoviesByType}/>
           <FormGroup tag="fieldset">
           <legend>Radio Buttons</legend>
           <FormGroup check>
