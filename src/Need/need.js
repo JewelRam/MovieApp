@@ -5,6 +5,7 @@
 import ColNavbar from "../Collection/ColNavbar"
 import React, { Component } from "react"
 import { Panel } from "react-bootstrap"
+import { FormGroup, Label, Input } from 'reactstrap';
 import SearchComponent from "../Random/SearchComponent"
 import Database from "../Random/APIManager"
 import NeedCard from "../Random/NeedCard"
@@ -14,58 +15,70 @@ export default class Need extends Component {
         super();
         this.state = {
             movies: []
-       
+
         };
     }
-   
-   
- addNewMovie = (searchResult) => {
-   
-    let newMovie= {
-   
-     "title": searchResult.title,
-     "image": searchResult.poster_path,
-     "type": this.state.selectedOption,
-     "genreId": 1,
-     "userId": 1,
-     "owned": "false",
-     "liked": "true",
-     "review": "review"
- 
-   }
-   Database.addMovie(newMovie)
-   .then(response => {
- return Database.getAllNeededMovies()
-   })
-   .then(responseData => {
-     this.setState({ movies: responseData })
- })
-  }   
-    performSearch = (query) => {
-        Database.performSearch(query)
-             .then(neededMovie =>
-                this.addNewMovie(neededMovie) )
-     }
-    
-      componentDidMount() {
-       Database.getAllNeededMovies()
+
+
+    addNewMovie = (searchResult) => {
+
+        let newMovie = {
+
+            "title": searchResult.title,
+            "image": searchResult.poster_path,
+            "type": this.state.selectedOption,
+            "genreId": 1,
+            "userId": 1,
+            "owned": "false",
+            "liked": "true",
+            "review": "review"
+
+        }
+        Database.addMovie(newMovie)
+            .then(response => {
+                return Database.getAllNeededMovies()
+            })
             .then(responseData => {
                 this.setState({ movies: responseData })
             })
     }
-    
-      deleteMovie = movieId => {
+    addMovieToCollection = (movieId) => {
+        Database.addMovieToCollection(movieId)
+            .then(responseData => {
+                this.setState({ movies: responseData })
+            })
+    }
+    performSearch = (query) => {
+        Database.performSearch(query)
+            .then(neededMovie =>
+                this.addNewMovie(neededMovie))
+    }
+    handleOptionChange = (changeEvent) => {
+        // console.log("hey", changeEvent.target.value)
+        this.setState({
+            selectedOption: changeEvent.target.value
+        });
+    }
+
+    componentDidMount() {
+        Database.getAllNeededMovies()
+            .then(responseData => {
+                this.setState({ movies: responseData })
+            })
+    }
+
+    deleteMovie = movieId => {
         // Delete the specified movie from the API
         Database.deleteMovie(movieId)
-          .then(() => {
-            return Database.getAllNeededMovies("movies")
-          })      
-          .then(card => {
-            this.setState({
-              movies: card
+            .then(() => {
+                return Database.getAllNeededMovies("movies")
+            })
+            .then(card => {
+                this.setState({
+                    movies: card
+                });
             });
-          });
-      };
+    };
 
     render() {
         return (
@@ -79,22 +92,49 @@ export default class Need extends Component {
                         <Panel.Title componentClass="h3">Movies I Need To Buy</Panel.Title>
                     </Panel.Heading>
                     <Panel.Body><ColNavbar /></Panel.Body>
+                    <FormGroup tag="fieldset">
+                        <legend>Radio Buttons</legend>
+                        <FormGroup check>
+                            <Label check>
+                                <Input type="radio" name="radio1" value="DVD"
+                                    checked={this.state.selectedOption === 'DVD'}
+                                    onChange={this.handleOptionChange} />{' '}
+                                DVD
+            </Label>
+                        </FormGroup>
+                        <FormGroup check>
+                            <Label check>
+                                <Input type="radio" name="radio2" value="BLURAY"
+                                    checked={this.state.selectedOption === 'BLURAY'}
+                                    onChange={this.handleOptionChange} />{' '}
+                                BLURAY
+            </Label>
+                        </FormGroup>
+                        <FormGroup check >
+                            <Label check>
+                                <Input type="radio" name="radio3" value="VHS"
+                                    checked={this.state.selectedOption === 'VHS'}
+                                    onChange={this.handleOptionChange} />{' '}
+                                VHS
+            </Label>
+                        </FormGroup>
+                    </FormGroup>
 
                     <SearchComponent performSearch={this.performSearch} />
                     <ul>
-              {this.state.movies.map(movie => (
+                        {this.state.movies.map(movie => (
 
-                <NeedCard
-                  key={movie.id}
-                  movie={movie}
+                            <NeedCard
+                                key={movie.id}
+                                movie={movie}
+                                addMovieToCollection={this.addMovieToCollection}
+                                deleteMovie={this.deleteMovie}
+                            />
 
-                  deleteMovie={this.deleteMovie}
-                />
 
-
-              ))
-              }
-            </ul>
+                        ))
+                        }
+                    </ul>
                 </Panel>
             </div>
         );

@@ -81,17 +81,6 @@
       "id": 150695
     },
     {
-      "title": "Advantageous",
-      "image": "/wGD529WiRYTCaXFrX93HESFLzo4.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "review": "review",
-      "id": "5"
-    },
-    {
       "title": "FernGully: The Last Rainforest",
       "image": "/gU2TbLTJ2s0aL5OsPuYQgZR8y3A.jpg",
       "type": "VHS",
@@ -114,14 +103,78 @@
       "id": 150700
     },
     {
-      "title": "White God",
-      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
+      "title": "Her",
+      "image": "/fsoTLnUXEUTNuVCBxAJMY0HPPd.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": true,
+      "liked": "true",
+      "review": "review",
+      "id": 150703
+    },
+    {
+      "title": "Interstellar",
+      "image": "/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
       "genreId": 1,
       "userId": 1,
       "owned": "false",
       "liked": "true",
       "review": "review",
-      "id": 150701
+      "id": 150704
+    },
+    {
+      "title": "Starship Troopers",
+      "image": "/zeCD9WkhABFJmPq3SlTozXJGEtr.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150705
+    },
+    {
+      "title": "Legally Blonde",
+      "image": "/1gAnkZNAd3HqgWL7aqSOQFwt7D1.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150707
+    },
+    {
+      "title": "Fido",
+      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "review": "",
+      "id": 150708
+    },
+    {
+      "title": "Django Unchained",
+      "image": "/5WJnxuw41sddupf8cwOxYftuvJG.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "review": "review",
+      "id": 150710
+    },
+    {
+      "title": "Django Unchained",
+      "image": "/5WJnxuw41sddupf8cwOxYftuvJG.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "review": "review",
+      "id": 150711
     },
     {
       "title": "Cinderella",
@@ -131,7 +184,7 @@
       "owned": "false",
       "liked": "false",
       "review": "review",
-      "id": 150702
+      "id": 150712
     }
   ],
   "genres": [

@@ -15,7 +15,7 @@ return(
     <h3>{props.movie.title}</h3>
     <p>{props.movie.type}</p>
     <p>
-        <Button>Add</Button>
+        <Button onClick={() => props.addMovieToCollection(props.movie.id)}>Add</Button>
       <Button onClick={() => props.deleteMovie(props.movie.id)} bsStyle="danger">Delete</Button>
     
     </p>

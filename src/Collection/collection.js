@@ -112,7 +112,7 @@ handleOptionChange = (changeEvent) => {
               BLURAY
             </Label>
           </FormGroup>
-          <FormGroup check disabled>
+          <FormGroup check >
             <Label check>
               <Input type="radio" name="radio3" value="VHS" 
               checked={this.state.selectedOption === 'VHS'} 
