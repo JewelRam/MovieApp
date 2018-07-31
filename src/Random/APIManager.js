@@ -64,29 +64,30 @@ const Database = Object.create({}, {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ owned: true })
             })
-                .then(e => e.json())
-                // When add is finished, retrieve the new list of articles
-                .then(() => {
-                    // Remember you HAVE TO return this fetch to the subsequenet `then()`
-                    return fetch("http://localhost:5002/movies?owned=true")
-                })
-                // Once the new array of articles is retrieved, set the state
-                .then(e => e.json())
-        }
+        
+        }   
     },
-    // patchFeedback: {
-    //     value: (purchasedMovie) => {
-    //      return fetch(`http://localhost:5002/${movieId??}`,
-    //      {
-    //       // http://localhost:5002/movies
-    //       method: "PATCH",
-    //       headers: {
-    //        "Content-Type": "application/json"
-    //       },
-    //       body: JSON.stringify(theObject)
-    //      });
-    //     }
-    //    },//end of patch
+    removeMovieFromDislike: {
+        value: (movieId) => {
+            return fetch(`http://localhost:5002/movies/${movieId}`, {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ liked: true })
+            })
+        
+        }   
+    },
+    removeMovieFromNeed: {
+        value: (movieId) => {
+            return fetch(`http://localhost:5002/movies/${movieId}`, {
+                method: "PATCH",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ owned: false })
+            })
+        
+        }   
+    },
+    
     performSearch: {
         value: (query) => {
 
@@ -103,19 +104,19 @@ const Database = Object.create({}, {
 
         },
 
-    }
+    },
 
-    // handleEdit: {
-    //     value: (moviesToEdit) => {
-    //         return fetch(`http://localhost:5002/tasks/${moviesToEdit.id}`, {
-    //             method: "PUT",
-    //             body: JSON.stringify(moviesToEdit),
-    //             headers: {
-    //                 "Content-Type": "application/json"
-    //             }
-    //         }).then(() => { return fetch("http://localhost:5002/tasks?completed=false") })
-    //             .then(a => a.json())
-    //     }
-    // },
+    handleEdit: {
+        value: (movieToEdit) => {
+            return fetch(`http://localhost:5002/tasks/${movieToEdit.id}`, {
+                method: "PUT",
+                body: JSON.stringify(movieToEdit),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then(() => { return fetch("http://localhost:5002/movies?liked=false") })
+                .then(a => a.json())
+        }
+    }
 })
 export default Database

@@ -81,17 +81,6 @@
       "id": 150695
     },
     {
-      "title": "FernGully: The Last Rainforest",
-      "image": "/gU2TbLTJ2s0aL5OsPuYQgZR8y3A.jpg",
-      "type": "VHS",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "review": "review",
-      "id": 150696
-    },
-    {
       "title": "Star Wars",
       "image": "/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg",
       "type": "VHS",
@@ -101,37 +90,6 @@
       "liked": "true",
       "review": "review",
       "id": 150700
-    },
-    {
-      "title": "Her",
-      "image": "/fsoTLnUXEUTNuVCBxAJMY0HPPd.jpg",
-      "genreId": 1,
-      "userId": 1,
-      "owned": true,
-      "liked": "true",
-      "review": "review",
-      "id": 150703
-    },
-    {
-      "title": "Interstellar",
-      "image": "/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "review": "review",
-      "id": 150704
-    },
-    {
-      "title": "Starship Troopers",
-      "image": "/zeCD9WkhABFJmPq3SlTozXJGEtr.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "review": "review",
-      "id": 150705
     },
     {
       "title": "Legally Blonde",
@@ -145,14 +103,26 @@
       "id": 150707
     },
     {
-      "title": "Fido",
-      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "title": "Mars Attacks!",
+      "image": "/gaTuHICwavPUmqQzPZFEXKSRwsC.jpg",
+      "type": "VHS",
       "genreId": 1,
       "userId": 1,
-      "owned": "false",
+      "owned": true,
       "liked": "true",
-      "review": "",
-      "id": 150708
+      "review": "review",
+      "id": 150712
+    },
+    {
+      "title": "White God",
+      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": true,
+      "liked": "true",
+      "review": "review",
+      "id": 150713
     },
     {
       "title": "Django Unchained",
@@ -160,21 +130,10 @@
       "type": "DVD",
       "genreId": 1,
       "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "review": "review",
-      "id": 150710
-    },
-    {
-      "title": "Django Unchained",
-      "image": "/5WJnxuw41sddupf8cwOxYftuvJG.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
       "owned": "false",
       "liked": "true",
       "review": "review",
-      "id": 150711
+      "id": 150714
     },
     {
       "title": "Cinderella",
@@ -183,8 +142,29 @@
       "userId": 1,
       "owned": "false",
       "liked": "false",
+      "review": "Movie was Awful",
+      "id": 150715
+    },
+    {
+      "title": "The Notebook",
+      "image": "/gMfstesBXKdsHToAUXVPHujUDfb.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "review": "stupid chick flick",
+      "id": 150716
+    },
+    {
+      "title": "FernGully: The Last Rainforest",
+      "image": "/gU2TbLTJ2s0aL5OsPuYQgZR8y3A.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
       "review": "review",
-      "id": 150712
+      "id": 150717
     }
   ],
   "genres": [

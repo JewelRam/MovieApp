@@ -45,7 +45,8 @@ export default class Need extends Component {
     addMovieToCollection = (movieId) => {
         Database.addMovieToCollection(movieId)
             .then(responseData => {
-                this.setState({ movies: responseData })
+                // this.setState({ movies: responseData })
+                 this.props.history.push("/collection")
             })
     }
     performSearch = (query) => {
@@ -93,7 +94,7 @@ export default class Need extends Component {
                     </Panel.Heading>
                     <Panel.Body><ColNavbar /></Panel.Body>
                     <FormGroup tag="fieldset">
-                        <legend>Radio Buttons</legend>
+                        <legend>What Kind?</legend>
                         <FormGroup check>
                             <Label check>
                                 <Input type="radio" name="radio1" value="DVD"

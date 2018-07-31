@@ -7,6 +7,7 @@ import Database from "./APIManager"
 
 const ReviewCard = props => {
 
+   
 
     return(
         
@@ -17,16 +18,17 @@ const ReviewCard = props => {
            <CardTitle>{props.movie.title}</CardTitle>
           
          </CardBody>
-         <img width="20%" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="Card image cap" />
+         <img width="10%" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="Card image cap" />
         <CardBody>
-          <CardText>Why didnt you like this movie???</CardText>
-           <Button>Edit</Button> <Button onClick={() => props.deleteMovie(props.movie.id)}>Delete</Button>
+          <CardText id="movie-review">{props.movie.review}</CardText>
+           <Button onClick={() => props.editMovie(props.movie.id)}>Edit</Button>
+            <Button onClick={() => props.deleteMovie(props.movie.id)}>Delete</Button>
           
         </CardBody>
        </Card>
     </div>
     ) 
 
-
+    
 }
 export default ReviewCard;

@@ -24,7 +24,7 @@ export default class ApplicationViews extends Component {
                     }
                 }} />
                 <Route path="/Home" component={Home} />
-                <Route path="/Collection" component={Collection} />
+                <Route path="/Collection" component={Collection}  />
                 <Route path="/need" component={Need} />
                 <Route path="/dislike" component={Dislike} />
             </React.Fragment>

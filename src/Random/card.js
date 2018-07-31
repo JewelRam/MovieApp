@@ -10,14 +10,16 @@ const MovieCard = props => {
 
 console.log(props.movie.id)
 return(
-    <Thumbnail id="movieCard" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
-    <h3>{props.movie.title}</h3>
-    <p>{props.movie.type}</p>
+    <div class="movieCard">
+    <Thumbnail src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
+    <h3 id="stuff">{props.movie.title}</h3>
+    <p id="stuff">{props.movie.type}</p>
     <p>
       <Button onClick={() => props.deleteMovie(props.movie.id)} bsStyle="danger">Delete</Button>
     
     </p>
   </Thumbnail>
+  </div>
 )
 }  
 

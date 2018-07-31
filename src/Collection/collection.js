@@ -95,7 +95,7 @@ handleOptionChange = (changeEvent) => {
           </Panel.Heading>
           <Panel.Body><TypeNavbar getMoviesByType={this.getMoviesByType}/>
           <FormGroup tag="fieldset">
-          <legend>Radio Buttons</legend>
+          <legend>What Kind?</legend>
           <FormGroup check>
             <Label check>
               <Input type="radio" name="radio1" value="DVD" 
@@ -124,7 +124,7 @@ handleOptionChange = (changeEvent) => {
             <SearchComponent 
             performSearch={this.performSearch} />
     
-            <ul>
+            <ul class="movieContainer">
               {this.state.movies.map(movie => (
 
                 <MovieCard
