@@ -3,3 +3,132 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+#root {
+  /* Sets the display of the root container to grid */
+    display: grid;
+    
+  /* Puts 10 pixels of space between each grid item */
+    grid-gap: 0px;
+    
+  /* Determines the number of columns and how wide each column is relative to the others */
+    grid-template-columns: 5fr 5fr;
+    
+  /* Determines the number of rows and how tall each row is relative to the others */
+    
+    max-height: 100vh;
+min-height: 100vh;
+} 
+#login {
+  background-image: url("https://media.giphy.com/media/G12DX1KaAcRva/giphy.gif");
+  color: black;
+  background-size: cover;
+  background-position: center;
+  grid-column-start: 1;
+               
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: center;
+}
+#login-form {
+  max-width: 330px;
+  text-align: center;
+  
+}
+.movieCard {
+  max-width: 200px;
+  max-height: 400px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  /* grid-template-columns: 35% 35% 35%;
+  grid-gap: 18px; */
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#stuff{
+  margin-top: auto;
+}
+#submitBtn {
+  background-color: black;
+}
+#add-movie-btn {
+  margin: 15px;
+}
+#home {
+  background-image: url("https://www.overthinkingit.com/wp-content/uploads/2009/09/aaaaaaa.jpg");
+  color: red;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+                
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#dislike {
+  color: black;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+ 
+    grid-column-end: 3;
+ 
+    text-align: left;
+}
+#collection {
+  
+  color:white;
+  font-size: 20px;
+  grid-column-start: 1;
+  background-size: cover;
+  background-position: center;
+  /* The chat div ends at the beginning of column 2 */
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+#checkbox-heading {
+  color: white;
+  font-size: 25px;
+font-weight: 900;
+}
+.panel-body {
+  background-image: url("http://letsbnb.co/wp-content/uploads/2018/03/neon-paint-splatter-bedroom-large-image-for-pink-walls-green-ideas-shirt.jpg");          
+
+}
+#need {
+  
+  color: red;
+  /* grid-column-start: 1; */
+  background-size: cover;
+  background-position: center;
+      grid-column-start: 1;
+      grid-column-end: 3;          
+  /* The chat div ends at the beginning of column 2 */
+    /* grid-column-end: 3; */
+ 
+    text-align: left;
+}
+#navbar {
+  font-size: 50px;
+  background-color: rgb(15, 15, 20);
+  
+}
+#searchBar {
+  max-width: 500px;
+}
+#colNav {
+  font-size: 50px;
+  background-color: rgb(15, 15, 20);
+  max-width: 100px;
+  text-align: center;
+}
