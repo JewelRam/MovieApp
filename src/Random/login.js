@@ -20,10 +20,6 @@ export default class Login extends Component {
     handleLogin = (e) => {
         e.preventDefault()
 
-        /*
-            For now, just store the email and password that
-            the customer enters into local storage.
-        */
         localStorage.setItem(
             "credentials",
             JSON.stringify({
@@ -64,8 +60,16 @@ export default class Login extends Component {
             <div id="login">
                 <form id="login-form" class="form-signin" onSubmit={this.handleLogin}>
                     <h2 class="form-signin-heading">Login</h2>
-                    <input type="text" class="form-control" onChange={this.handleFieldChange} name="username" placeholder="Enter User Name" required="" autofocus="" />
-                    <input type="password" onChange={this.handleFieldChange} class="form-control" name="password" placeholder="Password" required="" />
+                    <input type="text" 
+                    class="form-control" 
+                    id="userName"
+                    onChange={this.handleFieldChange} 
+                    name="username" placeholder="Enter User Name" required="" autofocus="" />
+                    <input type="password"
+                    id="password" 
+                    onChange={this.handleFieldChange} 
+                    class="form-control" name="password"
+                     placeholder="Password" required="" />
 
                     <button id="submitBtn" class="btn btn-lg btn-primary btn-block" type="submit" onClick={() => window.location.reload() }>Login</button>
                 </form>

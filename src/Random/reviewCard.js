@@ -1,9 +1,9 @@
 //creates cards for dislike.js
 //needs delete button and move to collection button
 import React from "react";
-import { Card, CardTitle, CardText, CardBody, Button, CardSubtitle } from "reactstrap"
 
-import Database from "./APIManager"
+import { Thumbnail, Button } from 'react-bootstrap'
+
 
 const ReviewCard = props => {
 
@@ -11,22 +11,18 @@ const ReviewCard = props => {
 
     return(
         
+        <div class="reviewCard">
         
- <div>
-      <Card>
-        <CardBody>
-           <CardTitle>{props.movie.title}</CardTitle>
-          
-         </CardBody>
-         <img width="10%" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="Card image cap" />
-        <CardBody>
-          <CardText id="movie-review">{props.movie.review}</CardText>
-           <Button onClick={() => props.editMovie(props.movie.id)}>Edit</Button>
-            <Button onClick={() => props.deleteMovie(props.movie.id)}>Delete</Button>
-          
-        </CardBody>
-       </Card>
-    </div>
+    <Thumbnail src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
+    <h4 id="stuff">{props.movie.title}</h4>
+   
+    <p> {props.movie.review}</p>
+      <Button onClick={() => props.deleteMovie(props.movie.id)} bsStyle="danger">Delete</Button>
+      <Button onClick={() => props.editMovie(props.movie.id)}>Edit</Button>
+    
+  </Thumbnail>
+  </div>
+        
     ) 
 
     

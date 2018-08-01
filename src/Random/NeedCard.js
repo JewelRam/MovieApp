@@ -11,8 +11,8 @@ const NeedCard = props => {
 
 console.log(props.movie.id)
 return(
-    <Thumbnail id="movieCard" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
-    <h3>{props.movie.title}</h3>
+    <Thumbnail id="needCard" src={`https://image.tmdb.org/t/p/w200${props.movie.image}`} alt="242x200">
+    <h4>{props.movie.title}</h4>
     <p>{props.movie.type}</p>
     <p>
         <Button onClick={() => props.addMovieToCollection(props.movie.id)}>Add</Button>

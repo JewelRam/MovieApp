@@ -31,7 +31,7 @@ export default class Need extends Component {
             "userId": 1,
             "owned": "false",
             "liked": "true",
-            "review": "review"
+            "isReviewed": "false"
 
         }
         Database.addMovie(newMovie)
@@ -84,10 +84,7 @@ export default class Need extends Component {
     render() {
         return (
             <div id="need">
-                {/* <PageHeader>
-            Movies I Need To Buy <small>Wooo tiny header</small>
-              <ColNavbar/>
-              </PageHeader> */}
+               
                 <Panel bsStyle="info">
                     <Panel.Heading>
                         <Panel.Title componentClass="h3">Movies I Need To Buy</Panel.Title>
@@ -122,7 +119,7 @@ export default class Need extends Component {
                     </FormGroup>
 
                     <SearchComponent performSearch={this.performSearch} />
-                    <ul>
+                    <ul className="needContainer">
                         {this.state.movies.map(movie => (
 
                             <NeedCard
