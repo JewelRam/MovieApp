@@ -1,84 +1,33 @@
 {
   "users": [
     {
-      "userName": "userName",
-      "password": "password",
+      "userName": " ",
+      "password": " ",
       "id": 1
     }
   ],
   "movies": [
     {
-      "vote_count": 185,
-      "id": 10288,
-      "video": false,
-      "vote_average": 6.6,
-      "title": "Fido",
-      "popularity": 5.775,
-      "poster_path": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
-      "original_language": "en",
-      "original_title": "Fido",
-      "genre_ids": [
-        10749,
-        35,
-        18,
-        27
-      ],
-      "backdrop_path": "/rtQKPquRwkk2tpc6LuSg0DrfHpW.jpg",
-      "adult": false,
-      "overview": "Timmy Robinson's best friend in the whole wide world is a six-foot tall rotting zombie named Fido. But when Fido eats the next-door neighbor, Mom and Dad hit the roof, and Timmy has to go to the ends of the earth to keep Fido a part of the family. A boy-and-his-dog movie for grown ups, \"Fido\" will rip your heart out.",
-      "release_date": "2006-09-07"
-    },
-    {
-      "vote_count": 3478,
-      "id": 150689,
-      "video": false,
-      "vote_average": 6.7,
       "title": "Cinderella",
-      "popularity": 22.285,
-      "poster_path": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
-      "original_language": "en",
-      "original_title": "Cinderella",
-      "genre_ids": [
-        10749,
-        14,
-        10751,
-        18
-      ],
-      "backdrop_path": "/gkuyOdCeuKLdOlwQIUF44SHsYCq.jpg",
-      "adult": false,
-      "overview": "When her father unexpectedly passes away, young Ella finds herself at the mercy of her cruel stepmother and her daughters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger in the woods.",
-      "release_date": "2015-03-12"
+      "image": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 1,
+      "review": "Movie was Awful"
     },
     {
-      "vote_count": 4165,
-      "id": 58595,
-      "video": false,
-      "vote_average": 5.9,
-      "title": "Snow White and the Huntsman",
-      "popularity": 19.781,
-      "poster_path": "/40iabcM7KQLJzmO8yGm8AvUbxZR.jpg",
-      "original_language": "en",
-      "original_title": "Snow White and the Huntsman",
-      "genre_ids": [
-        12,
-        14,
-        18
-      ],
-      "backdrop_path": "/sPnG1FDAMkhzsOYRpT9MEF8ZkUv.jpg",
-      "adult": false,
-      "overview": "After the Evil Queen marries the King, she performs a violent coup in which the King is murdered and his daughter, Snow White, is taken captive. Almost a decade later, a grown Snow White is still in the clutches of the Queen. In order to obtain immortality, The Evil Queen needs the heart of Snow White. After Snow escapes the castle, the Queen sends the Huntsman to find her in the Dark Forest.",
-      "release_date": "2012-05-30"
-    },
-    {
-      "title": "The Descent",
-      "image": "/ldzNyitGjBLjjOzLTaQyYDMVDF1.jpg",
+      "title": "Fido",
+      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
       "type": "DVD",
       "genreId": 1,
       "userId": 1,
-      "owned": "true",
+      "owned": "false",
       "liked": "true",
-      "review": "review",
-      "id": 150695
+      "isReviewed": "false",
+      "id": 2
     },
     {
       "title": "Star Wars",
@@ -88,8 +37,30 @@
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150700
+      "isReviewed": "false",
+      "id": 3
+    },
+    {
+      "title": "Django Unchained",
+      "image": "/5WJnxuw41sddupf8cwOxYftuvJG.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 4
+    },
+    {
+      "title": "White God",
+      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 5
     },
     {
       "title": "Legally Blonde",
@@ -99,61 +70,8 @@
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150707
-    },
-    {
-      "title": "Mars Attacks!",
-      "image": "/gaTuHICwavPUmqQzPZFEXKSRwsC.jpg",
-      "type": "VHS",
-      "genreId": 1,
-      "userId": 1,
-      "owned": true,
-      "liked": "true",
-      "review": "review",
-      "id": 150712
-    },
-    {
-      "title": "White God",
-      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": true,
-      "liked": "true",
-      "review": "review",
-      "id": 150713
-    },
-    {
-      "title": "Django Unchained",
-      "image": "/5WJnxuw41sddupf8cwOxYftuvJG.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": true,
-      "liked": "true",
-      "review": "review",
-      "id": 150714
-    },
-    {
-      "title": "Cinderella",
-      "image": "/2i0JH5WqYFqki7WDhUW56Sg0obh.jpg",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "false",
-      "review": "Movie was Awful",
-      "id": 150715
-    },
-    {
-      "title": "The Notebook",
-      "image": "/gMfstesBXKdsHToAUXVPHujUDfb.jpg",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "false",
-      "review": "TERRIBLE chick flick",
-      "id": 150716
+      "isReviewed": "false",
+      "id": 6
     },
     {
       "title": "FernGully: The Last Rainforest",
@@ -163,41 +81,206 @@
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150717
+      "isReviewed": "false",
+      "id": 7
     },
     {
-      "title": "RoboCop",
-      "image": "/hFQcC5eSSHqJfk70RdgrMMxGuYt.jpg",
+      "title": "Mars Attacks!",
+      "image": "/gaTuHICwavPUmqQzPZFEXKSRwsC.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 8
+    },
+    {
+      "title": "Now and Then",
+      "image": "/1Jc7lM4mwDHBjnlBds5wcbyaFJi.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 13
+    },
+    {
+      "title": "Up in Smoke",
+      "image": "/cBbgz13sfqRMgu2neJYKAJ0xmx5.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 14
+    },
+    {
+      "title": "Alien",
+      "image": "/2h00HrZs89SL3tXB4nbkiM7BKHs.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 15
+    },
+    {
+      "title": "Aliens",
+      "image": "/nORMXEkYEbzkU5WkMWMgRDJwjSZ.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 16
+    },
+    {
+      "title": "Alien³",
+      "image": "/p7mUd9GpmCYV5qhkKGmiEerFK3i.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 17
+    },
+    {
+      "title": "AVP: Alien vs. Predator",
+      "image": "/9xzRKUBIqLwhhOYtcE7P1BbWXP9.jpg",
       "type": "DVD",
       "genreId": 1,
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150719
+      "isReviewed": "false",
+      "id": 18
     },
     {
-      "title": "Pretty Woman",
-      "image": "/fgmdaCMxXClZm2ePteLzCPySB1n.jpg",
+      "title": "Snow White and the Huntsman",
+      "image": "/40iabcM7KQLJzmO8yGm8AvUbxZR.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 19,
+      "review": "Piece of shit movie hate girl's face. BOOOO"
+    },
+    {
+      "title": "Rogue One: A Star Wars Story",
+      "image": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": true,
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 22
+    },
+    {
+      "title": "Halloween",
+      "image": "/vjoOFOTBJcJvA1weJejlZ92LZD4.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 24
+    },
+    {
+      "title": "The Campaign",
+      "image": "/6uH8BOWN60mu2Vd5z4jCaVWb2ix.jpg",
+      "type": "BLURAY",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 25
+    },
+    {
+      "title": "The Devil's Rejects",
+      "image": "/jSWt4aJizmXmPXV3SBQGTWhwuCB.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 26
+    },
+    {
+      "title": "Interstellar",
+      "image": "/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 27
+    },
+    {
+      "title": "From Hell",
+      "image": "/f3J77Cy3pRSeeN52Pk8oIvgi6IN.jpg",
       "type": "VHS",
       "genreId": 1,
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150720
+      "isReviewed": "false",
+      "id": 28
     },
     {
-      "title": "Braveheart",
-      "image": "/2qAgGeYdLjelOEqjW9FYvPHpplC.jpg",
+      "title": "The Silence of the Lambs",
+      "image": "/qjAyTj2BSth1EQ89vNfo0JYVPFN.jpg",
       "type": "VHS",
       "genreId": 1,
       "userId": 1,
       "owned": "true",
       "liked": "true",
-      "review": "review",
-      "id": 150721
+      "isReviewed": "false",
+      "id": 29
+    },
+    {
+      "title": "Hannibal",
+      "image": "/v5wAZwRqpGWmyAaaJ8BBHYuNXnj.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 30
+    },
+    {
+      "title": "Hannibal Rising",
+      "image": "/k1QRG9qZzuuJe4JTTpe4jlnQ5tt.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 31
+    },
+    {
+      "title": "Daddy's Home",
+      "image": "/diEAZtU6KJzo6VStL5US8arkdIQ.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 32,
+      "review": "wasnt funny at all. SO STUPID"
     }
   ],
   "genres": [

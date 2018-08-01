@@ -29,7 +29,7 @@ export default class Dislike extends Component {
       "userId": 1,
       "owned": "false",
       "liked": "false",
-      "review": "review"
+      "isReviewed": "true"
 
     }
     Database.addMovie(newMovie)
@@ -112,7 +112,9 @@ export default class Dislike extends Component {
           <Panel.Body><ColNavbar /></Panel.Body>
           <SearchComponent
             performSearch={this.performSearch} />
-          <ul>
+
+          <ul class="dislikeContainer">
+          
             {this.state.movies.map(movie => (
 
               <ReviewCard

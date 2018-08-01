@@ -30,7 +30,7 @@ export default class Collection extends Component {
     "userId": 1,
     "owned": "true",
     "liked": "true",
-    "review": "review"
+    "isReviewed": "false"
 
   }
   Database.addMovie(newMovie)
@@ -42,11 +42,12 @@ return Database.getAllOwnedMovies()
 })
  }
  performSearch = (query) => {
+   console.log(query)
   Database.performSearch(query)
        .then(movie => {
         console.log(movie)
         this.addNewMovie(movie)
-          //  this.setState({ movies: allMovies }
+          //  this.setState({ movies: movie })
        } 
        )
       
@@ -124,7 +125,7 @@ handleOptionChange = (changeEvent) => {
             <SearchComponent 
             performSearch={this.performSearch} />
     
-            <ul class="movieContainer">
+            <ul className="movieContainer">
               {this.state.movies.map(movie => (
 
                 <MovieCard

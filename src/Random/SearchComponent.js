@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { FormControl, FormGroup, Button } from "react-bootstrap"
-// import MovieCard from "./card"
-// import Database from "./APIManager"
+
 
 
 
