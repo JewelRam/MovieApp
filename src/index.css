@@ -46,6 +46,7 @@ min-height: 100vh;
   /* grid-template-columns: 35% 35% 35%;
   grid-gap: 18px; */
 }
+
 .movieContainer {
   display: flex;
   flex-wrap: wrap;
@@ -73,28 +74,36 @@ min-height: 100vh;
     text-align: left;
 }
 #dislike {
-  color: red;
+  color: black;
   grid-column-start: 1;
   background-size: cover;
   background-position: center;
-                
-  /* The chat div ends at the beginning of column 2 */
+ 
     grid-column-end: 3;
  
     text-align: left;
 }
 #collection {
   
-  color: red;
+  color:white;
+  font-size: 20px;
   grid-column-start: 1;
   background-size: cover;
   background-position: center;
-                
   /* The chat div ends at the beginning of column 2 */
-    /* grid-column-end: 3; */
+    grid-column-end: 3;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+}
+#checkbox-heading {
+  color: white;
+  font-size: 25px;
+font-weight: 900;
+}
+.panel-body {
+  background-image: url("http://letsbnb.co/wp-content/uploads/2018/03/neon-paint-splatter-bedroom-large-image-for-pink-walls-green-ideas-shirt.jpg");          
+
 }
 #need {
   
@@ -102,7 +111,8 @@ min-height: 100vh;
   /* grid-column-start: 1; */
   background-size: cover;
   background-position: center;
-                
+      grid-column-start: 1;
+      grid-column-end: 3;          
   /* The chat div ends at the beginning of column 2 */
     /* grid-column-end: 3; */
  

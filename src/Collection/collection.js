@@ -95,7 +95,7 @@ handleOptionChange = (changeEvent) => {
           </Panel.Heading>
           <Panel.Body><TypeNavbar getMoviesByType={this.getMoviesByType}/>
           <FormGroup tag="fieldset">
-          <legend>What Kind?</legend>
+          <legend id="checkbox-heading">What Kind?</legend>
           <FormGroup check>
             <Label check>
               <Input type="radio" name="radio1" value="DVD" 
