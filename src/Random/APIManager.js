@@ -46,6 +46,17 @@ const Database = Object.create({}, {
                 .then(e => e.json())
         }
     },
+    getPopularMovies: {
+        value: () => {
+            return fetch("https://api.themoviedb.org/3/movie/popular?api_key=7cd3eb7f73f94864b2e6a0bfd441b3dd&page=1&language=en")
+                .then(e => e.json())
+                .then(responseData => {
+                    console.log(responseData)
+                    return responseData.results.slice(0, 14)
+                   
+                })
+        }
+    },
 
     addMovie: {
         value: (newObject) => {

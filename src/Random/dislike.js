@@ -6,9 +6,9 @@
 import React, { Component } from "react";
 import ColNavbar from "../Collection/ColNavbar"
 import { Panel } from "react-bootstrap"
-import SearchComponent from "../Random/SearchComponent"
-import Database from "../Random/APIManager"
-import ReviewCard from "../Random/reviewCard"
+import SearchComponent from "./SearchComponent"
+import Database from "./APIManager"
+import ReviewCard from "./reviewCard"
 
 
 export default class Dislike extends Component {

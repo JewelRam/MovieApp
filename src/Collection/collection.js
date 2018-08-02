@@ -109,6 +109,8 @@ handleGenreChange = (changeEvent) => {
           </Panel.Heading>
           <Panel.Body><TypeNavbar getMoviesByGenre={this.getMoviesByGenre} 
           getMoviesByType={this.getMoviesByType}/>
+          <div className="radio-container">
+          <div className="type-radios">
           <FormGroup tag="fieldset">
           <legend id="checkbox-heading">What Kind?</legend>
           <FormGroup check>
@@ -136,6 +138,8 @@ handleGenreChange = (changeEvent) => {
             </Label>
           </FormGroup>
         </FormGroup>
+        </div>
+        <div className="genre-radios">
         <FormGroup tag="fieldset">
           <legend id="checkbox-heading">What Genre?</legend>
           <FormGroup check>
@@ -180,6 +184,8 @@ handleGenreChange = (changeEvent) => {
             </Label>
           </FormGroup>
         </FormGroup>
+        </div>
+        </div>
             <SearchComponent 
             performSearch={this.performSearch} />
     
