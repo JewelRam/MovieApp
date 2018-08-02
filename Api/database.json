@@ -468,6 +468,94 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 51
+    },
+    {
+      "title": "Mars Attacks!",
+      "image": "/gaTuHICwavPUmqQzPZFEXKSRwsC.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 52
+    },
+    {
+      "title": "Black Swan",
+      "image": "/dQ7uxvsVTspVIsqjfgQj8usJpwX.jpg",
+      "type": "BLURAY",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 53
+    },
+    {
+      "title": "Pacific Rim",
+      "image": "/sCJEwEShZvruTpQ2a4yiX3Q9EyZ.jpg",
+      "type": "BLURAY",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 54
+    },
+    {
+      "title": "Annabelle",
+      "image": "/yAgxM61Sn0dYML4C9v3MJFp5zPI.jpg",
+      "type": "BLURAY",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 55
+    },
+    {
+      "title": "The Hitch Hikers Guide to the Galaxy",
+      "image": "/9DtyE0sNkeStBBp4uZWUysq8GHm.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 56
+    },
+    {
+      "title": "Pink Floyd: The Wall",
+      "image": "/jshxdvf8A7oQqBAH3GFwXRwDyCX.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 57
+    },
+    {
+      "title": "Lone Survivor",
+      "image": "/8ST6iVp3fkUSbUpXRAc2Q96YQRk.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 58
+    },
+    {
+      "title": "Donnie Darko",
+      "image": "/nmb4QhCRmdfNP6rgb81yUFgI83l.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 59
     }
   ],
   "genres": [
