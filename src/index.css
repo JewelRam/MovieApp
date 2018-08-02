@@ -54,6 +54,8 @@ min-height: 100vh;
 .col-card-text {
   color: rgb(233, 114, 114);
 text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .needContainer {
   display: flex;
@@ -76,12 +78,12 @@ text-align: center;
   color: white;
 }
 .need-card-text {
-  color:rgb(247, 40, 40);
+  color: rgb(95, 95, 177);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .reviewCard {
-  max-width: 200px;
+  max-width: 250px;
   /* max-height: 400px; */
   text-align: center;
   display: flex;
@@ -117,6 +119,9 @@ text-align: center;
 }
 #add-movie-btn {
   margin: 15px;
+  background-color: rgb(152, 198, 236);
+  color: rgb(218, 115, 115);
+  font-weight: bold;
 }
 #home {
   background-image: url("http://th03.deviantart.net/fs70/PRE/f/2011/035/6/4/imdb_top_250_movie_poster_by_saxon1964-d38rnod.jpg");
@@ -140,34 +145,40 @@ text-align: center;
  
     text-align: left;
 }
-
+.dislike-div {
+  background-image: url("http://www.artofvfx.com/INCEPTION/INCEPTION_DNEG_VFX_15.jpg");
+  background-size: cover;
+  background-position: center;
+}
 #collection {
   
-  color: black;
+  color: rgb(233, 114, 114);
   font-size: 20px;
   grid-column-start: 1;
   background-size: cover;
   background-position: center;
   /* The chat div ends at the beginning of column 2 */
     grid-column-end: 3;
-
+background-color: black;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
 }
 
 #checkbox-heading {
-  color: black;
+  color: white;
   font-size: 25px;
 font-weight: 900;
 }
-/* .panel-body {
+.collection-div {
   background-image: url("http://letsbnb.co/wp-content/uploads/2018/03/neon-paint-splatter-bedroom-large-image-for-pink-walls-green-ideas-shirt.jpg");          
 
-} */
+}
 #need {
   
-  color: black;
+  color: rgb(95, 95, 177);
+  font-weight: bold;
+  font-size: 15px;
   /* grid-column-start: 1; */
   background-size: cover;
   background-position: center;
@@ -177,6 +188,15 @@ font-weight: 900;
     /* grid-column-end: 3; */
  
     text-align: left;
+}
+#need-heading {
+  color: black;
+  font-weight: bold;
+}
+.need-div {
+  background-image: url("http://www.theoccultmuseum.com/wp-content/uploads/2017/05/House-of-Horrors-19-People-Share-their-True-Haunted-House-Ghost-Stories-1.jpg");
+  background-size: cover;
+  background-position: center;
 }
 #navbar {
   font-size: 50px;

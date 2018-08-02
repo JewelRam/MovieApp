@@ -40,6 +40,12 @@ const Database = Object.create({}, {
                 .then(e => e.json())
         }
     },
+    getMoviesByGenre: {
+        value: (genre) => {
+            return fetch(`http://localhost:5002/movies?owned=true&genre=${genre}`)
+                .then(e => e.json())
+        }
+    },
 
     addMovie: {
         value: (newObject) => {

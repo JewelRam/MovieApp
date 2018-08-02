@@ -13,6 +13,7 @@ export default props => {
     </Navbar.Brand>
   </Navbar.Header>
   <Nav>
+  
     <NavItem eventKey={1} onClick={() => props.getMoviesByType("VHS")}>
       VHS
     </NavItem>
@@ -21,6 +22,22 @@ export default props => {
     </NavItem>
     <NavItem eventKey={3} onClick={() => props.getMoviesByType("BLURAY")}>
       BluRay
+    </NavItem>
+    <NavItem>-- Or --</NavItem>
+    <NavItem eventKey={4} onClick={() => props.getMoviesByGenre("Drama")}>
+      Drama
+    </NavItem>
+    <NavItem eventKey={5} onClick={() => props.getMoviesByGenre("Horror")}>
+      Horror
+    </NavItem>
+    <NavItem eventKey={6} onClick={() => props.getMoviesByGenre("Family")}>
+      Family
+    </NavItem>
+    <NavItem eventKey={7} onClick={() => props.getMoviesByGenre("SciFi")}>
+      SciFi
+    </NavItem>
+    <NavItem eventKey={7} onClick={() => props.getMoviesByGenre("Comedy")}>
+      Comedy
     </NavItem>
   </Nav>
 </Navbar>

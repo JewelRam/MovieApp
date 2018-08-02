@@ -113,7 +113,7 @@ export default class Dislike extends Component {
     return (
       <div className="dislike-div" id="dislike">
 
-        <Panel bsStyle="info">
+        <Panel className="dislike-div" bsStyle="info">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Movies I Didn't Like</Panel.Title>
           </Panel.Heading>

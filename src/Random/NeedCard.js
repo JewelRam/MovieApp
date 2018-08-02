@@ -15,6 +15,7 @@ return(
     <div className="need-card-text">
     <h4>{props.movie.title}</h4>
     <p>{props.movie.type}</p>
+    <p>{props.movie.genre}</p>
     <p>
         <Button onClick={() => props.addMovieToCollection(props.movie.id)}>Add</Button>
       <Button onClick={() => props.deleteMovie(props.movie.id)} bsStyle="danger">Delete</Button>

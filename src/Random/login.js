@@ -59,7 +59,7 @@ export default class Login extends Component {
             // </div>
             <div id="login">
                 <form id="login-form" class="form-signin" onSubmit={this.handleLogin}>
-                    <h2 class="form-signin-heading">Login</h2>
+                    <h2 class="form-signin-heading"></h2>
                     <input type="text" 
                     class="form-control" 
                     id="userName"
