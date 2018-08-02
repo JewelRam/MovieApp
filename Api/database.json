@@ -16,18 +16,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 1,
-      "review": "Movie was Awful"
-    },
-    {
-      "title": "Fido",
-      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 2
+      "review": "Movie was Awful!!!!"
     },
     {
       "title": "Star Wars",
@@ -50,17 +39,6 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 4
-    },
-    {
-      "title": "White God",
-      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
-      "type": "DVD",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 5
     },
     {
       "title": "Legally Blonde",
@@ -280,7 +258,216 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 32,
-      "review": "wasnt funny at all. SO STUPID"
+      "review": "STUPID MOVIE, not funny"
+    },
+    {
+      "title": "Jawbreaker",
+      "image": "/pjgsvVxxMR2DjjCyeHMoMJLzXds.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 33
+    },
+    {
+      "title": "Fido",
+      "image": "/eHRyjlgv8e66p4fhpQKeo5SpVGq.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 34
+    },
+    {
+      "title": "Atlantis: The Lost Empire",
+      "image": "/9kbLIQEj99g5Hb9g1IG3VNdtt3h.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 35
+    },
+    {
+      "title": "The Lion King",
+      "image": "/bKPtXn9n4M4s8vvZrbw40mYsefB.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 36
+    },
+    {
+      "title": "The Little Mermaid",
+      "image": "/ivdzLXCVgPUyjphKbbB40z8FQp8.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 37
+    },
+    {
+      "title": "Pan's Labyrinth",
+      "image": "/t0TDsqbCTgSi0AL7k4baZrOYYhi.jpg",
+      "type": "BLURAY",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 38
+    },
+    {
+      "title": "Splice",
+      "image": "/2ERwnTksOfNnAyZFp6oUn3BSRqK.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 39
+    },
+    {
+      "title": "Friday the 13th",
+      "image": "/4nbUlVEg31I8lchI3bu3Oq3Ks4t.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 40
+    },
+    {
+      "title": "Poltergeist",
+      "image": "/fWOPN0XBvHXFYr3RsPr74qBge2I.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 41
+    },
+    {
+      "title": "Monty Python and the Holy Grail",
+      "image": "/jRx1nDUA4sb2NEKQaukXKBz6pCf.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 42
+    },
+    {
+      "title": "Twilight",
+      "image": "/lcMp3AONdNhjYE9MmTtMMTOiRDP.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 43,
+      "review": "STUPID FACES"
+    },
+    {
+      "title": "White God",
+      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 44
+    },
+    {
+      "title": "Chappie",
+      "image": "/saF3HtAduvrP9ytXDxSnQJP3oqx.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": true,
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 45
+    },
+    {
+      "title": "Leon: The Professional",
+      "image": "/gE8S02QUOhVnAmYu4tcrBlMTujz.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 46
+    },
+    {
+      "title": "A Serbian Film",
+      "image": "/edM906NOM5WxaaAMeTsgDeqnBDr.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 47
+    },
+    {
+      "title": "Martyrs",
+      "image": "/fC2Uld8qZ6waCuo71oTKzJTscaN.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 48
+    },
+    {
+      "title": "Megan Is Missing",
+      "image": "/j4Zt98splKb96mK2YtOxEX7TfME.jpg",
+      "type": "DVD",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 49
+    },
+    {
+      "title": "Finding Nemo",
+      "image": "/syPWyeeqzTQIxjIUaIFI7d0TyEY.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 50
+    },
+    {
+      "title": "Life of Brian",
+      "image": "/cKpJnXJ6DzAGafAjUWB5PjT904O.jpg",
+      "type": "VHS",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 51
     }
   ],
   "genres": [

@@ -37,7 +37,7 @@ min-height: 100vh;
 }
 .movieCard {
   max-width: 200px;
-  max-height: 400px;
+  max-height: 500px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -45,8 +45,15 @@ min-height: 100vh;
   align-items: flex-start;
   padding: 10px;
   margin: 10px;
-  /* grid-template-columns: 35% 35% 35%;
-  grid-gap: 18px; */
+  
+  border: 5px solid black;
+  background-color: black;
+  border-radius: 9%;
+  
+}
+.col-card-text {
+  color: rgb(233, 114, 114);
+text-align: center;
 }
 .needContainer {
   display: flex;
@@ -63,6 +70,15 @@ min-height: 100vh;
   align-items: flex-start;
   padding: 10px;
   margin: 10px;
+  border: 5px solid black;
+  background-color: black;
+  border-radius: 9%;
+  color: white;
+}
+.need-card-text {
+  color:rgb(247, 40, 40);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .reviewCard {
   max-width: 200px;
@@ -72,8 +88,15 @@ min-height: 100vh;
   flex-wrap: wrap;
   flex-direction: row;
   /* align-items: flex-start; */
+  border: 5px solid black;
+  background-color: black;
+  border-radius: 9%;
   padding: 10px;
   margin: 10px;
+}
+.review-card-text {
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .dislikeContainer {
   display: flex;
@@ -96,7 +119,7 @@ min-height: 100vh;
   margin: 15px;
 }
 #home {
-  background-image: url("https://www.overthinkingit.com/wp-content/uploads/2009/09/aaaaaaa.jpg");
+  background-image: url("http://th03.deviantart.net/fs70/PRE/f/2011/035/6/4/imdb_top_250_movie_poster_by_saxon1964-d38rnod.jpg");
   color: red;
   grid-column-start: 1;
   background-size: cover;
@@ -117,6 +140,7 @@ min-height: 100vh;
  
     text-align: left;
 }
+
 #collection {
   
   color: black;
@@ -131,6 +155,7 @@ min-height: 100vh;
     flex-wrap: wrap;
     text-align: left;
 }
+
 #checkbox-heading {
   color: black;
   font-size: 25px;
@@ -166,4 +191,8 @@ font-weight: 900;
   background-color: rgb(15, 15, 20);
   max-width: 100px;
   text-align: center;
+}
+#navBtn {
+  padding: 15px;
+  margin: 20px;
 }

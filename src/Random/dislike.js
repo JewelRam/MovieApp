@@ -10,14 +10,17 @@ import SearchComponent from "../Random/SearchComponent"
 import Database from "../Random/APIManager"
 import ReviewCard from "../Random/reviewCard"
 
+
 export default class Dislike extends Component {
   constructor() {
     super();
     this.state = {
       movies: [],
       movieToEdit: []
+      
     };
   }
+  
   addNewMovie = (searchResult) => {
 
     let newMovie = {
@@ -88,6 +91,11 @@ export default class Dislike extends Component {
         })
       })
   }
+  handleModal = (movieId) => {
+    console.log("worked!!")
+    // this.editMovie(movieId)
+    this.toggle()
+  }
   deleteMovie = movieId => {
     // Delete the specified movie from the API
     Database.deleteMovie(movieId)
@@ -103,7 +111,7 @@ export default class Dislike extends Component {
 
   render() {
     return (
-      <div id="dislike">
+      <div className="dislike-div" id="dislike">
 
         <Panel bsStyle="info">
           <Panel.Heading>
@@ -113,8 +121,8 @@ export default class Dislike extends Component {
           <SearchComponent
             performSearch={this.performSearch} />
 
-          <ul class="dislikeContainer">
-          
+          <ul className="dislikeContainer">
+
             {this.state.movies.map(movie => (
 
               <ReviewCard
@@ -122,6 +130,7 @@ export default class Dislike extends Component {
                 movie={movie}
                 editMovie={this.editMovie}
                 deleteMovie={this.deleteMovie}
+                handleModal={this.handleModal}
               />
             ))
             }
@@ -129,8 +138,33 @@ export default class Dislike extends Component {
         </Panel>
 
 
-        {
-          (
+<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        ...
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        
             <form onSubmit={this.handleEdit.bind(this)}>
               <input onChange={this.handleFieldChange} type="text"
                 id="review"
@@ -143,10 +177,13 @@ export default class Dislike extends Component {
                 Update Review
                         </button>
             </form>
-          )
-        }
+          
+
+
+
 
       </div>
+
     );
   }
 }

@@ -88,6 +88,7 @@ handleOptionChange = (changeEvent) => {
 
   render() {
     return (
+      
       <div id="collection">
 
         <Panel bsStyle="info">
@@ -142,6 +143,7 @@ handleOptionChange = (changeEvent) => {
           </Panel.Body>
         </Panel>
       </div>
+      
     );
   }
 }
