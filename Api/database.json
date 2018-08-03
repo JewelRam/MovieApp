@@ -30,17 +30,6 @@
       "id": 62
     },
     {
-      "title": "White God",
-      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
-      "type": "DVD",
-      "genre": "Drama",
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 64
-    },
-    {
       "title": "Halloween",
       "image": "/vjoOFOTBJcJvA1weJejlZ92LZD4.jpg",
       "type": "VHS",
@@ -115,7 +104,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 73,
-      "review": "STUPID MOVIE"
+      "review": "STUPID MOVIE!!"
     },
     {
       "title": "Hellraiser",
@@ -206,15 +195,6 @@
       "id": 81
     },
     {
-      "title": "Pan's Labyrinth",
-      "image": "/t0TDsqbCTgSi0AL7k4baZrOYYhi.jpg",
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 82
-    },
-    {
       "title": "The Campaign",
       "image": "/6uH8BOWN60mu2Vd5z4jCaVWb2ix.jpg",
       "type": "BLURAY",
@@ -224,17 +204,6 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 83
-    },
-    {
-      "title": "The Descent",
-      "image": "/ldzNyitGjBLjjOzLTaQyYDMVDF1.jpg",
-      "type": "BLURAY",
-      "genre": "Horror",
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 84
     },
     {
       "title": "Annabelle",
@@ -312,17 +281,6 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 91
-    },
-    {
-      "title": "Life-Size",
-      "image": "/qRoCIMgX12S6p4odYoTSb0NND46.jpg",
-      "type": "VHS",
-      "genre": "Family",
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 92
     },
     {
       "title": "Monty Python and the Holy Grail",
@@ -433,6 +391,446 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 103
+    },
+    {
+      "title": "The Conjuring",
+      "image": "/ejrD1lkCIQX26TO8k4gePsFpcyX.jpg",
+      "type": "DVD",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 104
+    },
+    {
+      "title": "Pan's Labyrinth",
+      "image": "/t0TDsqbCTgSi0AL7k4baZrOYYhi.jpg",
+      "type": "BLURAY",
+      "genre": "Drama",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 105
+    },
+    {
+      "title": "22 Jump Street",
+      "image": "/gNlV5FhDZ1PjxSv2aqTPS30GEon.jpg",
+      "type": "BLURAY",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 106
+    },
+    {
+      "title": "Van Helsing",
+      "image": "/s2OPT5CZsZBQYAIlO9Mv4AimHvV.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 108
+    },
+    {
+      "title": "Super Troopers",
+      "image": "/w8Uu4bqq21onmvQx4ZsTm7dqXwq.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 109
+    },
+    {
+      "title": "Clerks II",
+      "image": "/luPEGTlN8egktVeomdf2nEap5SP.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 110
+    },
+    {
+      "title": "The Incredibles",
+      "image": "/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+      "type": "DVD",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 111
+    },
+    {
+      "title": "The Thing",
+      "image": "/s5fH3GqFcHbi2F0NSBSh4KRNTc0.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 112
+    },
+    {
+      "title": "The Matrix",
+      "image": "/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 113
+    },
+    {
+      "title": "Godzilla",
+      "image": "/szVwkB4H5yyOJBVuQ432b9boO0N.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 114
+    },
+    {
+      "title": "Pretty Woman",
+      "image": "/fgmdaCMxXClZm2ePteLzCPySB1n.jpg",
+      "type": "VHS",
+      "genre": "Drama",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 115
+    },
+    {
+      "title": "Kung Pow: Enter the Fist",
+      "image": "/yB9bESCHpp2iHUGuTC2Rc74Wdff.jpg",
+      "type": "VHS",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 116
+    },
+    {
+      "title": "The Devil Wears Prada",
+      "image": "/u6QBDGUCOEMRekna95ip2MxplbQ.jpg",
+      "type": "DVD",
+      "genre": "Drama",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 117
+    },
+    {
+      "title": "Mean Girls",
+      "image": "/lDlGPZS0UJYKxVlpyff3BMyPc2H.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 118
+    },
+    {
+      "title": "Date Night",
+      "image": "/fzzPht9KId6Ollow30jYtABhDY3.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 119
+    },
+    {
+      "title": "DodgeBall: A True Underdog Story",
+      "image": "/sgTJCyuZSJJt9LatGHolpCpqg1m.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 120
+    },
+    {
+      "title": "Horrible Bosses",
+      "image": "/17rVRW7ond0PR2KJHY0xY00isTB.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 121
+    },
+    {
+      "title": "Signs",
+      "image": "/bY9lCUVUajpkKWlfjWF1mtXaSUp.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 122
+    },
+    {
+      "title": "Napoleon Dynamite",
+      "image": "/s0yuDUKiAJNl5XkO9OT4aFwnA3I.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 123
+    },
+    {
+      "title": "The Hangover",
+      "image": "/uluhlXubGu1VxU63X9VHCLWDAYP.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 124
+    },
+    {
+      "title": "Beowulf",
+      "image": "/j90lLkvlcPNL6VVoLGQ0yzPUfJV.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 125
+    },
+    {
+      "title": "Total Recall",
+      "image": "/ikYpJ0AjGBNnAYFnPJDUVIOcduR.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 126
+    },
+    {
+      "title": "The Fifth Element",
+      "image": "/zaFa1NRZEnFgRTv5OVXkNIZO78O.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 127
+    },
+    {
+      "title": "Clerks",
+      "image": "/biEvW2hTrnWwhh6EWyTsHOh3COg.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 128
+    },
+    {
+      "title": "Advantageous",
+      "image": "/wGD529WiRYTCaXFrX93HESFLzo4.jpg",
+      "type": "DVD",
+      "genre": "Drama",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 129
+    },
+    {
+      "title": "Kiki's Delivery Service",
+      "image": "/f0QzflRlwX5dhEnzPqoVOsCt5Cy.jpg",
+      "type": "DVD",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 130
+    },
+    {
+      "title": "Castle in the Sky",
+      "image": "/4RTG2AaqZ9eleL51ryWwv78WwDu.jpg",
+      "type": "DVD",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 131
+    },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "image": "/eDkDYEUIHEp5qavNa5k6XsMHgbf.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 132
+    },
+    {
+      "title": "The Lord of the Rings: The Two Towers",
+      "image": "/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 133
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "image": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 134
+    },
+    {
+      "title": "Oliver & Company",
+      "image": "/m54pXsIUy3IJoaGhk3RwKsZQPG8.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 135
+    },
+    {
+      "title": "Life-Size",
+      "image": "/qRoCIMgX12S6p4odYoTSb0NND46.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 136
+    },
+    {
+      "title": "A Bug's Life",
+      "image": "/u9qGMRwcPwP0WETxulS5hKUsEum.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 137
+    },
+    {
+      "title": "Inspector Gadget",
+      "image": "/kvlKBGtyyNVyGJB72aD1vwPk2d4.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 138
+    },
+    {
+      "title": "Frozen",
+      "image": "/jIjdFXKUNtdf1bwqMrhearpyjMj.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 139,
+      "review": "STUPID SONG"
+    },
+    {
+      "title": "White God",
+      "image": "/l0eSYF5KBVkOipd6pBrxKyg06lb.jpg",
+      "type": "DVD",
+      "genre": "Drama",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 140
+    },
+    {
+      "title": "I Know What You Did Last Summer",
+      "image": "/cruOfvjIqMTbOQxld8SpM8OzVnf.jpg",
+      "type": "VHS",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 141
+    },
+    {
+      "title": "Antz",
+      "image": "/3biVcPu5hrfKUMC73sTFq17dmmS.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 143,
+      "review": "TERRIBLE. wished it was a bugs life"
+    },
+    {
+      "title": "The Twilight Saga: Eclipse",
+      "image": "/4IIFFKd9vxrlicNbAPS8ONEgIFp.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 144,
+      "review": "Still hate her face"
+    },
+    {
+      "title": "Jumper",
+      "image": "/mIz6FQabZrrzsOwYFpUpreijpvx.jpg",
+      "genreId": 1,
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 145,
+      "review": "dumb movie"
     }
   ],
   "genres": [

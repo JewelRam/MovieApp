@@ -102,8 +102,10 @@ export default class Need extends Component {
                             <Panel.Title componentClass="h3">Movies I Need To Buy</Panel.Title>
                         </Panel.Heading>
                         <Panel.Body><ColNavbar /></Panel.Body>
+                        <div className="radio-container">
+                        <div className="type-radios">
                         <FormGroup tag="fieldset">
-                            <legend id="need-heading">What Kind?</legend>
+                            <legend id="radio-heading">What Kind?</legend>
                             <FormGroup check>
                                 <Label check>
                                     <Input type="radio" name="radio1" value="DVD"
@@ -129,8 +131,10 @@ export default class Need extends Component {
             </Label>
                             </FormGroup>
                         </FormGroup>
+                        </div>
+                        <div className="genre-radios">
                         <FormGroup tag="fieldset">
-                            <legend id="checkbox-heading">What Genre?</legend>
+                            <legend id="radio-heading">What Genre?</legend>
                             <FormGroup check>
                                 <Label check>
                                     <Input type="radio" name="radio4" value="Horror"
@@ -172,6 +176,9 @@ export default class Need extends Component {
             </Label>
                             </FormGroup>
                         </FormGroup>
+                        </div>
+                        
+                        </div>
 
                         <SearchComponent performSearch={this.performSearch} />
                         <ul className="needContainer">
