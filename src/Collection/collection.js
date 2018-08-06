@@ -3,10 +3,13 @@
 import React, { Component } from "react"
 import TypeNavbar from "./TypeNavbar"
 import { Panel } from "react-bootstrap"
+// import SearchPage from "../Need/SearchPage"
 import SearchComponent from "../Random/SearchComponent"
 import MovieCard from "../Random/card"
 import Database from "../Random/APIManager"
 import { FormGroup, Label, Input } from 'reactstrap';
+
+import SearchPage from "../Need/SearchPage"
 
 
 export default class Collection extends Component {
@@ -15,7 +18,7 @@ export default class Collection extends Component {
     super();
     this.state = {
       movies: []
-
+    
     };
   }
   
@@ -41,17 +44,17 @@ return Database.getAllOwnedMovies()
     this.setState({ movies: responseData })
 })
  }
- performSearch = (query) => {
-   console.log(query)
-  Database.performSearch(query)
-       .then(movie => {
-        console.log(movie)
-        this.addNewMovie(movie)
-          //  this.setState({ movies: movie })
-       } 
-       )
+//  performSearch = (query) => {
+//    console.log(query)
+//   Database.performSearch(query)
+//        .then(movie => {
+//         console.log(movie)
+//         this.addNewMovie(movie)
+//           //  this.setState({ movies: movie })
+//        } 
+//        )
       
-}
+// }
 getMoviesByType = (type) => {
   Database.getMoviesByType(type)
   .then(movieType => {
@@ -71,6 +74,13 @@ getMoviesByGenre = (genre) => {
           // console.log(responseData)
             this.setState({ movies: responseData })
         })
+}
+componentFromCollection = () => {
+  Database.getAllOwnedMovies()
+      .then(responseData => {
+        // console.log(responseData)
+          this.setState({ movies: responseData })
+      })
 }
 handleOptionChange = (changeEvent) => {
   // console.log("hey", changeEvent.target.value)
@@ -186,8 +196,8 @@ handleGenreChange = (changeEvent) => {
         </FormGroup>
         </div>
         </div>
-            <SearchComponent 
-            performSearch={this.performSearch} />
+            <SearchPage componentFromCollection={this.componentFromCollection} />
+             
     
             <ul className="movieContainer">
               {this.state.movies.map(movie => (
@@ -201,12 +211,12 @@ handleGenreChange = (changeEvent) => {
 
 
               ))
-              }
+            }
             </ul>
-          </Panel.Body>
+         </Panel.Body>
         </Panel>
       </div>
       
     );
   }
-}
+  }

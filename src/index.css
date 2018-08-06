@@ -290,6 +290,22 @@ font-weight: 900;
 #searchBar {
   max-width: 500px;
 }
+.searchCard {
+  max-width: 250px;
+  margin: 10px;
+  background-color: aquamarine;
+  border-radius: 10%;
+  /* max-height: 400px; */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+}
 #colNav {
   font-size: 50px;
   background-color: rgb(15, 15, 20);

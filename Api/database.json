@@ -93,7 +93,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 72,
-      "review": "HATE her face AND HIS"
+      "review": "HATE her face AND HIS!! BOOO"
     },
     {
       "title": "The Twilight Saga: Breaking Dawn - Part 2",
@@ -182,17 +182,6 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 80
-    },
-    {
-      "title": "Interstellar",
-      "image": "/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
-      "type": "DVD",
-      "genre": "SciFi",
-      "userId": 1,
-      "owned": "false",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 81
     },
     {
       "title": "The Campaign",
@@ -842,6 +831,66 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 146
+    },
+    {
+      "title": "Star Wars",
+      "image": "/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 147
+    },
+    {
+      "title": "The Breakfast Club",
+      "image": "/4ZejrrCpfoypR5lHoT3pq6yVldW.jpg",
+      "type": "VHS",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 148
+    },
+    {
+      "title": "Interstellar",
+      "image": "/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 149
+    },
+    {
+      "title": "Black Swan",
+      "image": "/dQ7uxvsVTspVIsqjfgQj8usJpwX.jpg",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 152
+    },
+    {
+      "title": "Godzilla",
+      "image": "/1MJcpTpeSh2RtRHI7EMHStvWDEt.jpg",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 153
+    },
+    {
+      "title": "Step Brothers",
+      "image": "/tDFNUuYkQ4ZeAlrBHeTtimAumXo.jpg",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 154
     }
   ],
   "genres": [
