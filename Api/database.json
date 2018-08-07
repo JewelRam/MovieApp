@@ -811,17 +811,6 @@
       "review": "Still hate her face"
     },
     {
-      "title": "Jumper",
-      "image": "/mIz6FQabZrrzsOwYFpUpreijpvx.jpg",
-      "genreId": 1,
-      "userId": 1,
-      "owned": "false",
-      "liked": "false",
-      "isReviewed": "true",
-      "id": 145,
-      "review": "dumb movie"
-    },
-    {
       "title": "Wedding Crashers",
       "image": "/5vMEXtz1DXgxFsv8pgFFGuOlI8V.jpg",
       "type": "DVD",
@@ -897,6 +886,170 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 152
+    },
+    {
+      "title": "I Love You, Man",
+      "image": "/gFL5cazCOhgsoO2mQuYPMdFekfE.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 153
+    },
+    {
+      "title": "The Conjuring",
+      "image": "/ejrD1lkCIQX26TO8k4gePsFpcyX.jpg",
+      "type": "DVD",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 154
+    },
+    {
+      "title": "Snow White",
+      "image": "/rggCgUhNl3AZXylsqIJH4q9o0bh.jpg",
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 155,
+      "review": "Boooooo"
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "image": "/sXFlyjfWv544uKOJmPd2vVsaFm9.jpg",
+      "type": "VHS",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 156
+    },
+    {
+      "title": "A Nightmare on Elm Street",
+      "image": "/zPdMcikD993AQRd92iNv0Dxb67T.jpg",
+      "type": "VHS",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 157
+    },
+    {
+      "title": "Stargate",
+      "image": "/39WsfbB5BshvdbPAYRFXdsjC481.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 158
+    },
+    {
+      "title": "The Hobbit: An Unexpected Journey",
+      "image": "/ysX7vDmSh5O19vFjAi56WL7l4nk.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 159
+    },
+    {
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "image": "/9zRzFJuaj0CHIOhAkcCcFTvyu2X.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 160
+    },
+    {
+      "title": "The Hobbit: The Desolation of Smaug",
+      "image": "/gQCiuxGsfiXH1su6lp9n0nd0UeH.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 161
+    },
+    {
+      "title": "Aliens",
+      "image": "/nORMXEkYEbzkU5WkMWMgRDJwjSZ.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 162
+    },
+    {
+      "title": "Cinderella",
+      "image": "/cdf4J7tDhSPAghWWgx9EnwQWBfF.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 163
+    },
+    {
+      "title": "Lady and the Tramp",
+      "image": "/AqQpqEn33UYExlAoWA02Hizb2lc.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 164
+    },
+    {
+      "title": "Ebirah, Horror of the Deep",
+      "image": "/jxRoai0ScRfYfjHHwSAAmVn2jns.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 165
+    },
+    {
+      "title": "Godzilla vs. Mothra",
+      "image": "/doLqzcHHGq6y2Bmw58nlzdCmDYR.jpg",
+      "type": "VHS",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 166
+    },
+    {
+      "title": "Eraserhead",
+      "image": "/l8oAmU5swopsyWzTHpZtAK15Mrc.jpg",
+      "type": "VHS",
+      "genre": "Horror",
+      "userId": 1,
+      "owned": "false",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 167
     }
   ],
   "genres": [

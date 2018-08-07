@@ -9,7 +9,7 @@ import { FormGroup, Label, Input } from 'reactstrap';
 import SearchComponent from "../Random/SearchComponent"
 import Database from "../Random/APIManager"
 import NeedCard from "../Random/NeedCard"
-import SearchPage from "./SearchPage"
+import SearchPageN from "./SearchPageN"
 
 export default class Need extends Component {
     constructor() {
@@ -61,7 +61,13 @@ export default class Need extends Component {
             selectedOption: changeEvent.target.value
         });
     }
-
+    componentFromNeed = () => {
+        Database.getAllNeededMovies()
+            .then(responseData => {
+              // console.log(responseData)
+                this.setState({ movies: responseData })
+            })
+      }
     componentDidMount() {
         Database.getAllNeededMovies()
             .then(responseData => {
@@ -180,7 +186,7 @@ export default class Need extends Component {
                         </div>
                         
                         </div>
-                        <SearchPage genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromCollection={this.componentFromCollection} />
+                        <SearchPageN genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromNeed={this.componentFromNeed} />
 
                         <ul className="needContainer">
                             {this.state.movies.map(movie => (

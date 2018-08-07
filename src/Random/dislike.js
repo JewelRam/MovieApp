@@ -6,7 +6,7 @@
 import React, { Component } from "react";
 import ColNavbar from "../Collection/ColNavbar"
 import { Panel } from "react-bootstrap"
-import SearchComponent from "./SearchComponent"
+import SearchPageD from "../Need/SearchPageD"
 import Database from "./APIManager"
 import ReviewCard from "./reviewCard"
 
@@ -57,6 +57,13 @@ export default class Dislike extends Component {
       .then(responseData => {
         this.setState({ movies: responseData })
       })
+  }
+  componentFromDislike = () => {
+    Database.getAllDislikedMovies()
+        .then(responseData => {
+          // console.log(responseData)
+            this.setState({ movies: responseData })
+        })
   }
   handleEdit = (event) => {
     event.preventDefault()
@@ -118,8 +125,8 @@ export default class Dislike extends Component {
             <Panel.Title componentClass="h3">Movies I Didn't Like</Panel.Title>
           </Panel.Heading>
           <Panel.Body><ColNavbar /></Panel.Body>
-          <SearchComponent
-            performSearch={this.performSearch} />
+          <SearchPageD genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromDislike={this.componentFromDislike} />
+
 
           <ul className="dislikeContainer">
 
