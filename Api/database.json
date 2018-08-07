@@ -71,7 +71,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 70,
-      "review": "Movie was Awful!!!!"
+      "review": "Movie Awful!!!!!"
     },
     {
       "title": "Snow White and the Huntsman",
@@ -82,7 +82,8 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 71,
-      "review": "HATE her face"
+      "review": "HATE her face AND HIS!! BOOO",
+      "review-text": "HATE her face AND HIS!!"
     },
     {
       "title": "Twilight",
@@ -93,7 +94,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 72,
-      "review": "HATE her face AND HIS!! BOOO"
+      "review": "HATE her face ANd HIS!! "
     },
     {
       "title": "The Twilight Saga: Breaking Dawn - Part 2",
@@ -917,7 +918,7 @@
       "liked": "false",
       "isReviewed": "true",
       "id": 155,
-      "review": "Boooooo"
+      "review": "BOOOOOOO"
     },
     {
       "title": "A Nightmare on Elm Street",
@@ -1050,6 +1051,27 @@
       "liked": "true",
       "isReviewed": "false",
       "id": 167
+    },
+    {
+      "title": "James and the Giant Peach",
+      "image": "/fDfgO1jkPAIX9ZbXka9XcOfDWl3.jpg",
+      "type": "VHS",
+      "genre": "Family",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 168
+    },
+    {
+      "title": "Little Nicky",
+      "image": "/ijfKqbZoZQjer5Oiolxy7hn8L92.jpg",
+      "userId": 1,
+      "owned": "false",
+      "liked": "false",
+      "isReviewed": "true",
+      "id": 169,
+      "review": "Eh, didnt love it. not that funny "
     }
   ],
   "genres": [

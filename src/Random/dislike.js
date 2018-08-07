@@ -15,8 +15,8 @@ export default class Dislike extends Component {
   constructor() {
     super();
     this.state = {
-      movies: [],
-      movieToEdit: []
+      movies: []
+      
       
     };
   }
@@ -65,44 +65,40 @@ export default class Dislike extends Component {
             this.setState({ movies: responseData })
         })
   }
-  handleEdit = (event) => {
-    event.preventDefault()
-    fetch(`http://localhost:5002/movies/${this.state.movieToEdit.id}`, {
-      method: "PUT",
-      body: JSON.stringify(this.state.movieToEdit),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    }).then(() => { return fetch("http://localhost:5002/movies?liked=false") })
-      .then(a => a.json())
-      .then(updatedMovie => {
-        this.setState({
-          movies: updatedMovie
-        })
-      })
-  }
-  handleFieldChange = (event) => {
-    const stateToChange = this.state.movieToEdit
-    stateToChange[event.target.id] = event.target.value
-    this.setState({ movieToEdit: stateToChange })
-  }
+  // handleEdit = (event) => {
+  //   event.preventDefault()
+  //   fetch(`http://localhost:5002/movies/${this.state.movieToEdit.id}`, {
+  //     method: "PUT",
+  //     body: JSON.stringify(this.state.movieToEdit),
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     }
+  //   }).then(() => { return fetch("http://localhost:5002/movies?liked=false") })
+  //     .then(a => a.json())
+  //     .then(updatedMovie => {
+  //       this.setState({
+  //         movies: updatedMovie, viewForm: false
+  //       })
+  //     })
+  // }
+  // handleFieldChange = (event) => {
+  //   const stateToChange = this.state.movieToEdit
+  //   stateToChange[event.target.id] = event.target.value
+  //   this.setState({ movieToEdit: stateToChange })
+  // }
 
-  editMovie = (movieId) => {
-    console.log("movieId", movieId)
-    fetch(`http://localhost:5002/movies/${movieId}`)
+  // editMovie = (movieId) => {
+  //   console.log("movieId", movieId)
+  //   fetch(`http://localhost:5002/movies/${movieId}`)
 
-      .then(a => a.json())
-      .then(movie => {
-        this.setState({
-          movieToEdit: movie
-        })
-      })
-  }
-  handleModal = (movieId) => {
-    console.log("worked!!")
-    // this.editMovie(movieId)
-    this.toggle()
-  }
+  //     .then(a => a.json())
+  //     .then(movie => {
+  //       this.setState({
+  //         movieToEdit: movie, viewForm: true
+  //       })
+  //     })
+  // }
+  
   deleteMovie = movieId => {
     // Delete the specified movie from the API
     Database.deleteMovie(movieId)
@@ -115,8 +111,19 @@ export default class Dislike extends Component {
         });
       });
   };
+  NewReview = () => {
+     return fetch("http://localhost:5002/movies?liked=false") 
+    .then(a => a.json())
+    .then(updatedMovie => {
+      this.setState({
+        movies: updatedMovie
+      })
+    })
+}
+  
 
   render() {
+    
     return (
       <div className="dislike-div" id="dislike">
 
@@ -135,62 +142,21 @@ export default class Dislike extends Component {
               <ReviewCard
                 key={movie.id}
                 movie={movie}
-                editMovie={this.editMovie}
+                NewReview={this.NewReview}
                 deleteMovie={this.deleteMovie}
-                handleModal={this.handleModal}
+                
               />
             ))
             }
           </ul>
         </Panel>
+        </div>
+        )
+  
 
 
-<button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-
-<div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog" role="document">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div className="modal-body">
-        ...
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-        
-            <form onSubmit={this.handleEdit.bind(this)}>
-              <input onChange={this.handleFieldChange} type="text"
-                id="review"
-                placeholder="Edit Review"
-                value={this.state.movieToEdit.review}
-                required="" autoFocus="" />
-
-
-              <button type="submit">
-                Update Review
-                        </button>
-            </form>
           
-
-
-
-
-      </div>
-
-    );
-  }
-}
+      }    
+    }
+  
+  
