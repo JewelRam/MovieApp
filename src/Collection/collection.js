@@ -8,6 +8,8 @@ import MovieCard from "../Random/card"
 import Database from "../Random/APIManager"
 import { FormGroup, Label, Input } from 'reactstrap';
 
+import SearchPage from "../Need/SearchPage"
+
 
 export default class Collection extends Component {
 
@@ -15,7 +17,7 @@ export default class Collection extends Component {
     super();
     this.state = {
       movies: []
-
+    
     };
   }
   
@@ -26,7 +28,7 @@ export default class Collection extends Component {
     "title": searchResult.title,
     "image": searchResult.poster_path,
     "type": this.state.selectedOption,
-    "genreId": 1,
+    "genre": this.state.selectedGenre,
     "userId": 1,
     "owned": "true",
     "liked": "true",
@@ -41,21 +43,27 @@ return Database.getAllOwnedMovies()
     this.setState({ movies: responseData })
 })
  }
- performSearch = (query) => {
-   console.log(query)
-  Database.performSearch(query)
-       .then(movie => {
-        console.log(movie)
-        this.addNewMovie(movie)
-          //  this.setState({ movies: movie })
-       } 
-       )
+//  performSearch = (query) => {
+//    console.log(query)
+//   Database.performSearch(query)
+//        .then(movie => {
+//         console.log(movie)
+//         this.addNewMovie(movie)
+//           //  this.setState({ movies: movie })
+//        } 
+//        )
       
-}
+// }
 getMoviesByType = (type) => {
   Database.getMoviesByType(type)
   .then(movieType => {
     this.setState({movies: movieType})
+  } )
+}
+getMoviesByGenre = (genre) => {
+  Database.getMoviesByGenre(genre)
+  .then(movieGenre => {
+    this.setState({movies: movieGenre})
   } )
 }
 
@@ -66,10 +74,23 @@ getMoviesByType = (type) => {
             this.setState({ movies: responseData })
         })
 }
+componentFromCollection = () => {
+  Database.getAllOwnedMovies()
+      .then(responseData => {
+        // console.log(responseData)
+          this.setState({ movies: responseData })
+      })
+}
 handleOptionChange = (changeEvent) => {
   // console.log("hey", changeEvent.target.value)
   this.setState({
     selectedOption: changeEvent.target.value
+  });
+}
+handleGenreChange = (changeEvent) => {
+  // console.log("hey", changeEvent.target.value)
+  this.setState({
+    selectedGenre: changeEvent.target.value
   });
 }
   deleteMovie = movieId => {
@@ -88,13 +109,17 @@ handleOptionChange = (changeEvent) => {
 
   render() {
     return (
+      
       <div id="collection">
 
-        <Panel bsStyle="info">
+        <Panel className="collection-div" bsStyle="info">
           <Panel.Heading>
             <Panel.Title componentClass="h3">My Collection</Panel.Title>
           </Panel.Heading>
-          <Panel.Body><TypeNavbar getMoviesByType={this.getMoviesByType}/>
+          <Panel.Body><TypeNavbar getMoviesByGenre={this.getMoviesByGenre} 
+          getMoviesByType={this.getMoviesByType}/>
+          <div className="radio-container">
+          <div className="type-radios">
           <FormGroup tag="fieldset">
           <legend id="checkbox-heading">What Kind?</legend>
           <FormGroup check>
@@ -107,7 +132,7 @@ handleOptionChange = (changeEvent) => {
           </FormGroup>
           <FormGroup check>
             <Label check>
-              <Input type="radio" name="radio2" value="BLURAY" 
+              <Input type="radio" name="radio1" value="BLURAY" 
               checked={this.state.selectedOption === 'BLURAY'} 
               onChange={this.handleOptionChange}/>{' '}
               BLURAY
@@ -115,15 +140,63 @@ handleOptionChange = (changeEvent) => {
           </FormGroup>
           <FormGroup check >
             <Label check>
-              <Input type="radio" name="radio3" value="VHS" 
+              <Input type="radio" name="radio1" value="VHS" 
               checked={this.state.selectedOption === 'VHS'} 
               onChange={this.handleOptionChange} />{' '}
               VHS
             </Label>
           </FormGroup>
         </FormGroup>
-            <SearchComponent 
-            performSearch={this.performSearch} />
+        </div>
+        <div className="genre-radios">
+        <FormGroup tag="fieldset">
+          <legend id="checkbox-heading">What Genre?</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio4" value="Horror" 
+              checked={this.state.selectedGenre === 'Horror'} 
+              onChange={this.handleGenreChange} />{' '}
+              Horror
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio4" value="SciFi" 
+  
+              checked={this.state.selectedGenre === 'SciFi'} 
+              onChange={this.handleGenreChange}/>{' '}
+              SciFi
+            </Label>
+          </FormGroup>
+          <FormGroup check >
+            <Label check>
+              <Input type="radio" name="radio4" value="Drama" 
+              checked={this.state.selectedGenre === 'Drama'} 
+              onChange={this.handleGenreChange} />{' '}
+              Drama
+            </Label>
+          </FormGroup>
+          <FormGroup check >
+            <Label check>
+              <Input type="radio" name="radio4" value="Comedy" 
+              checked={this.state.selectedGenre === 'Comedy'} 
+              onChange={this.handleGenreChange} />{' '}
+              Comedy
+            </Label>
+          </FormGroup>
+          <FormGroup check >
+            <Label check>
+              <Input type="radio" name="radio4" value="Family" 
+              checked={this.state.selectedGenre === 'Family'} 
+              onChange={this.handleGenreChange} />{' '}
+              Family
+            </Label>
+          </FormGroup>
+        </FormGroup>
+        </div>
+        </div>
+            <SearchPage genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromCollection={this.componentFromCollection} />
+             
     
             <ul className="movieContainer">
               {this.state.movies.map(movie => (
@@ -135,13 +208,13 @@ handleOptionChange = (changeEvent) => {
                   deleteMovie={this.deleteMovie}
                 />
 
-
               ))
-              }
+            }
             </ul>
-          </Panel.Body>
+         </Panel.Body>
         </Panel>
       </div>
+      
     );
   }
-}
+  }

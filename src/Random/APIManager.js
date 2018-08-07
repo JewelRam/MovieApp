@@ -40,6 +40,23 @@ const Database = Object.create({}, {
                 .then(e => e.json())
         }
     },
+    getMoviesByGenre: {
+        value: (genre) => {
+            return fetch(`http://localhost:5002/movies?owned=true&genre=${genre}`)
+                .then(e => e.json())
+        }
+    },
+    getPopularMovies: {
+        value: () => {
+            return fetch("https://api.themoviedb.org/3/movie/popular?api_key=7cd3eb7f73f94864b2e6a0bfd441b3dd&page=1&language=en")
+                .then(e => e.json())
+                .then(responseData => {
+                    console.log(responseData)
+                    return responseData.results.slice(0, 14)
+                   
+                })
+        }
+    },
 
     addMovie: {
         value: (newObject) => {
@@ -67,6 +84,17 @@ const Database = Object.create({}, {
         
         }   
     },
+    addMovieToCollectionFromSearch: {
+        value: (newMovie) => {
+            return fetch("http://localhost:5002/movies", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(newMovie)
+            })
+        
+        }   
+    },
+   
     removeMovieFromDislike: {
         value: (movieId) => {
             return fetch(`http://localhost:5002/movies/${movieId}`, {
@@ -88,6 +116,24 @@ const Database = Object.create({}, {
         }   
     },
     
+    // performSearch: {
+    //     value: (query) => {
+
+    //         return fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=7cd3eb7f73f94864b2e6a0bfd441b3dd&page=1&language="en")
+    // `)
+    //             .then(response => response.json())
+    //             .then(responseData => {
+    //                 console.log(responseData)
+    //                 return responseData.results[0]
+                   
+    //                 // const firstTitle = responseData.results[0].title
+
+    //                 // this.setState({ movies: responseData.results })
+    //             })
+
+    //     },
+
+    // },
     performSearch: {
         value: (query) => {
 
@@ -96,11 +142,9 @@ const Database = Object.create({}, {
                 .then(response => response.json())
                 .then(responseData => {
                     console.log(responseData)
-                    return responseData.results[0]
+                    return responseData.results.slice(0,9)
                    
-                    // const firstTitle = responseData.results[0].title
-
-                    // this.setState({ movies: responseData.results })
+                   
                 })
 
         },

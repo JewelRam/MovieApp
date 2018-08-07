@@ -1,6 +1,6 @@
 //navbar for homepage, needs links to collection-need-meh
 import React from "react"
-import { Navbar, NavItem,  Nav } from 'react-bootstrap'
+import { Navbar, NavItem,  Nav, Button } from 'react-bootstrap'
 
 export default props => {
   return (
@@ -12,16 +12,18 @@ export default props => {
     </Navbar.Brand>
   </Navbar.Header>
   <Nav>
-    <NavItem eventKey={1} href="collection">
-      Collection --
-    </NavItem>
-    {/* <button type="button" href="collection" class="btn btn-outline-secondary">Collection</button> */}
-    <NavItem eventKey={2} href="need">
-      Need To Buy --
-    </NavItem>
-    <NavItem eventKey={3} href="dislike">
-      Eh, I'm Good
-    </NavItem>
+    
+     <Button id="navBtn"  href="collection" bsSize="large">
+      Go To My Colleciton
+    </Button>
+    
+    <Button id="navBtn"  href="need" bsSize="large">
+      Go To My Need To Buy Page
+    </Button>
+    <Button id="navBtn"  href="dislike" bsSize="large">
+      Movies That Sucked Ass
+    </Button>
+    
   </Nav>
 </Navbar>
   )

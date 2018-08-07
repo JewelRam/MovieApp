@@ -5,7 +5,7 @@ import { Navbar, NavItem,  Nav, Button } from 'react-bootstrap'
 
 export default props => {
   return (
-<Navbar>
+<Navbar >
   
   <Navbar.Header>
     <Navbar.Brand>
@@ -13,14 +13,31 @@ export default props => {
     </Navbar.Brand>
   </Navbar.Header>
   <Nav>
-    <NavItem eventKey={1} onClick={() => props.getMoviesByType("VHS")}>
+  
+    <NavItem id="nav-item" eventKey={1} onClick={() => props.getMoviesByType("VHS")}>
       VHS
     </NavItem>
-    <NavItem eventKey={2} onClick={() => props.getMoviesByType("DVD")}>
+    <NavItem id="nav-item" eventKey={2} onClick={() => props.getMoviesByType("DVD")}>
       DVD
     </NavItem>
-    <NavItem eventKey={3} onClick={() => props.getMoviesByType("BLURAY")}>
+    <NavItem id="nav-item" eventKey={3} onClick={() => props.getMoviesByType("BLURAY")}>
       BluRay
+    </NavItem>
+    <NavItem>-- Or --</NavItem>
+    <NavItem id="nav-item" eventKey={4} onClick={() => props.getMoviesByGenre("Drama")}>
+      Drama
+    </NavItem>
+    <NavItem id="nav-item" eventKey={5} onClick={() => props.getMoviesByGenre("Horror")}>
+      Horror
+    </NavItem>
+    <NavItem id="nav-item" eventKey={6} onClick={() => props.getMoviesByGenre("Family")}>
+      Family
+    </NavItem>
+    <NavItem id="nav-item" eventKey={7} onClick={() => props.getMoviesByGenre("SciFi")}>
+      SciFi
+    </NavItem>
+    <NavItem id="nav-item" eventKey={7} onClick={() => props.getMoviesByGenre("Comedy")}>
+      Comedy
     </NavItem>
   </Nav>
 </Navbar>

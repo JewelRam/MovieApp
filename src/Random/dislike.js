@@ -6,18 +6,21 @@
 import React, { Component } from "react";
 import ColNavbar from "../Collection/ColNavbar"
 import { Panel } from "react-bootstrap"
-import SearchComponent from "../Random/SearchComponent"
-import Database from "../Random/APIManager"
-import ReviewCard from "../Random/reviewCard"
+import SearchPageD from "../Need/SearchPageD"
+import Database from "./APIManager"
+import ReviewCard from "./reviewCard"
+
 
 export default class Dislike extends Component {
   constructor() {
     super();
     this.state = {
-      movies: [],
-      movieToEdit: []
+      movies: []
+      
+      
     };
   }
+  
   addNewMovie = (searchResult) => {
 
     let newMovie = {
@@ -55,39 +58,47 @@ export default class Dislike extends Component {
         this.setState({ movies: responseData })
       })
   }
-  handleEdit = (event) => {
-    event.preventDefault()
-    fetch(`http://localhost:5002/movies/${this.state.movieToEdit.id}`, {
-      method: "PUT",
-      body: JSON.stringify(this.state.movieToEdit),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    }).then(() => { return fetch("http://localhost:5002/movies?liked=false") })
-      .then(a => a.json())
-      .then(updatedMovie => {
-        this.setState({
-          movies: updatedMovie
+  componentFromDislike = () => {
+    Database.getAllDislikedMovies()
+        .then(responseData => {
+          // console.log(responseData)
+            this.setState({ movies: responseData })
         })
-      })
   }
-  handleFieldChange = (event) => {
-    const stateToChange = this.state.movieToEdit
-    stateToChange[event.target.id] = event.target.value
-    this.setState({ movieToEdit: stateToChange })
-  }
+  // handleEdit = (event) => {
+  //   event.preventDefault()
+  //   fetch(`http://localhost:5002/movies/${this.state.movieToEdit.id}`, {
+  //     method: "PUT",
+  //     body: JSON.stringify(this.state.movieToEdit),
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     }
+  //   }).then(() => { return fetch("http://localhost:5002/movies?liked=false") })
+  //     .then(a => a.json())
+  //     .then(updatedMovie => {
+  //       this.setState({
+  //         movies: updatedMovie, viewForm: false
+  //       })
+  //     })
+  // }
+  // handleFieldChange = (event) => {
+  //   const stateToChange = this.state.movieToEdit
+  //   stateToChange[event.target.id] = event.target.value
+  //   this.setState({ movieToEdit: stateToChange })
+  // }
 
-  editMovie = (movieId) => {
-    console.log("movieId", movieId)
-    fetch(`http://localhost:5002/movies/${movieId}`)
+  // editMovie = (movieId) => {
+  //   console.log("movieId", movieId)
+  //   fetch(`http://localhost:5002/movies/${movieId}`)
 
-      .then(a => a.json())
-      .then(movie => {
-        this.setState({
-          movieToEdit: movie
-        })
-      })
-  }
+  //     .then(a => a.json())
+  //     .then(movie => {
+  //       this.setState({
+  //         movieToEdit: movie, viewForm: true
+  //       })
+  //     })
+  // }
+  
   deleteMovie = movieId => {
     // Delete the specified movie from the API
     Database.deleteMovie(movieId)
@@ -100,53 +111,52 @@ export default class Dislike extends Component {
         });
       });
   };
+  NewReview = () => {
+     return fetch("http://localhost:5002/movies?liked=false") 
+    .then(a => a.json())
+    .then(updatedMovie => {
+      this.setState({
+        movies: updatedMovie
+      })
+    })
+}
+  
 
   render() {
+    
     return (
-      <div id="dislike">
+      <div className="dislike-div" id="dislike">
 
-        <Panel bsStyle="info">
+        <Panel className="dislike-div" bsStyle="info">
           <Panel.Heading>
             <Panel.Title componentClass="h3">Movies I Didn't Like</Panel.Title>
           </Panel.Heading>
           <Panel.Body><ColNavbar /></Panel.Body>
-          <SearchComponent
-            performSearch={this.performSearch} />
+          <SearchPageD genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromDislike={this.componentFromDislike} />
 
-          <ul class="dislikeContainer">
-          
+
+          <ul className="dislikeContainer">
+
             {this.state.movies.map(movie => (
 
               <ReviewCard
                 key={movie.id}
                 movie={movie}
-                editMovie={this.editMovie}
+                NewReview={this.NewReview}
                 deleteMovie={this.deleteMovie}
+                
               />
             ))
             }
           </ul>
         </Panel>
+        </div>
+        )
+  
 
 
-        {
-          (
-            <form onSubmit={this.handleEdit.bind(this)}>
-              <input onChange={this.handleFieldChange} type="text"
-                id="review"
-                placeholder="Edit Review"
-                value={this.state.movieToEdit.review}
-                required="" autoFocus="" />
-
-
-              <button type="submit">
-                Update Review
-                        </button>
-            </form>
-          )
-        }
-
-      </div>
-    );
-  }
-}
+          
+      }    
+    }
+  
+  
