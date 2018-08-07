@@ -15,13 +15,13 @@ export default class SearchPage extends Component {
 
     }
     addNewMovie = (searchResult) => {
-   
+    
         let newMovie= {
        
          "title": searchResult.title,
          "image": searchResult.poster_path,
-         "type": this.state.selectedOption,
-         "genre": this.state.selectedGenre,
+         "type": this.props.type,
+         "genre": this.props.genre,
          "userId": 1,
          "owned": "true",
          "liked": "true",
@@ -61,15 +61,22 @@ export default class SearchPage extends Component {
 
     //     e.currentTarget.reset();
     // }
-    addMovieToCollectionFromSearch = (newMovie) => {
-        console.log(newMovie)
+    // addMovieToCollectionFromSearch = (newMovie) => {
+        
+    //     Database.addMovieToCollectionFromSearch(newMovie)
+    //         .then(responseData => {
+    //             this.setState({ movies: responseData })
+    //             // this.props.history.push("/Collection")
+    //         })
+    // }
+    addMovieToCollecitonFromSearch = (newMovie) => {
+        
         Database.addMovieToCollectionFromSearch(newMovie)
             .then(responseData => {
                 this.setState({ movies: responseData })
                 // this.props.history.push("/Collection")
             })
     }
-
 
     render() {
         return (
@@ -86,7 +93,9 @@ export default class SearchPage extends Component {
                 <div className="search-container">
                     {this.state.results.map((movies) => (
 
-                        <SearchCard key={movies.id} movies={movies} 
+                        <SearchCard key={movies.id}
+                         movies={movies}
+                          
                         results={this.state.results} 
                         addNewMovie={this.addNewMovie} />
                     ))}

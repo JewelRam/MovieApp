@@ -866,31 +866,37 @@
       "id": 149
     },
     {
-      "title": "Black Swan",
-      "image": "/dQ7uxvsVTspVIsqjfgQj8usJpwX.jpg",
+      "title": "Step Brothers",
+      "image": "/tDFNUuYkQ4ZeAlrBHeTtimAumXo.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 150
+    },
+    {
+      "title": "Godzilla",
+      "image": "/szVwkB4H5yyOJBVuQ432b9boO0N.jpg",
+      "type": "DVD",
+      "genre": "SciFi",
+      "userId": 1,
+      "owned": "true",
+      "liked": "true",
+      "isReviewed": "false",
+      "id": 151
+    },
+    {
+      "title": "Date Night",
+      "image": "/fzzPht9KId6Ollow30jYtABhDY3.jpg",
+      "type": "DVD",
+      "genre": "Comedy",
       "userId": 1,
       "owned": "true",
       "liked": "true",
       "isReviewed": "false",
       "id": 152
-    },
-    {
-      "title": "Godzilla",
-      "image": "/1MJcpTpeSh2RtRHI7EMHStvWDEt.jpg",
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 153
-    },
-    {
-      "title": "Step Brothers",
-      "image": "/tDFNUuYkQ4ZeAlrBHeTtimAumXo.jpg",
-      "userId": 1,
-      "owned": "true",
-      "liked": "true",
-      "isReviewed": "false",
-      "id": 154
     }
   ],
   "genres": [

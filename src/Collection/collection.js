@@ -3,7 +3,6 @@
 import React, { Component } from "react"
 import TypeNavbar from "./TypeNavbar"
 import { Panel } from "react-bootstrap"
-// import SearchPage from "../Need/SearchPage"
 import SearchComponent from "../Random/SearchComponent"
 import MovieCard from "../Random/card"
 import Database from "../Random/APIManager"
@@ -196,7 +195,7 @@ handleGenreChange = (changeEvent) => {
         </FormGroup>
         </div>
         </div>
-            <SearchPage componentFromCollection={this.componentFromCollection} />
+            <SearchPage genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromCollection={this.componentFromCollection} />
              
     
             <ul className="movieContainer">
@@ -208,7 +207,6 @@ handleGenreChange = (changeEvent) => {
 
                   deleteMovie={this.deleteMovie}
                 />
-
 
               ))
             }

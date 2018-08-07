@@ -3,11 +3,11 @@ import { Thumbnail, Button } from 'react-bootstrap'
 import Database from "../Random/APIManager"
 
 
-const PopularCard = props => {
+const SearchCard = props => {
 
    
 
-    console.log("props", props)
+    
 return(
     
     <Thumbnail  className="searchCard" src={`https://image.tmdb.org/t/p/w200${props.movies.poster_path}`} alt="242x200">
@@ -23,4 +23,4 @@ return(
 )
 }  
 
-export default PopularCard;
+export default SearchCard;

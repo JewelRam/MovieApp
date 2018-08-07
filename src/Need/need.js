@@ -9,6 +9,7 @@ import { FormGroup, Label, Input } from 'reactstrap';
 import SearchComponent from "../Random/SearchComponent"
 import Database from "../Random/APIManager"
 import NeedCard from "../Random/NeedCard"
+import SearchPage from "./SearchPage"
 
 export default class Need extends Component {
     constructor() {
@@ -179,8 +180,8 @@ export default class Need extends Component {
                         </div>
                         
                         </div>
+                        <SearchPage genre={this.state.selectedGenre} type={this.state.selectedOption} componentFromCollection={this.componentFromCollection} />
 
-                        <SearchComponent performSearch={this.performSearch} />
                         <ul className="needContainer">
                             {this.state.movies.map(movie => (
 
