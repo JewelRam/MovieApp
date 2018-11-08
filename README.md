@@ -9,3 +9,5 @@ To see it in action:
 3. In another terminal cd one step deeper into the API and run  json-server -w database.json -p 5002
 
 4. This will load the app and all the movies already stored in the database
+
+5. Now add your movies to your collection!
