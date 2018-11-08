@@ -10,4 +10,4 @@ To see it in action:
 
 4. This will load the app and all the movies already stored in the database
 
-5. Now add your movies to your collection!
+You will be brought to the home page showing popular movies playing now. From there you pick a nav-bar item and start adding movies!
